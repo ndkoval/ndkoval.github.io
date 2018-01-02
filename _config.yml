@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nkoval.info" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nkoval_
-
+repository: "ndkoval/ndkoval.github.io"
 # Build settings
 markdown: kramdown
 theme: minimal-mistakes-jekyll
@@ -31,6 +31,7 @@ remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
   - jekyll-archives
+  - jemoji
 
 minimal_mistakes_skin: "contrast"
 
@@ -54,10 +55,11 @@ defaults:
 
 timezone: Europe/Moscow
 
-comments:
-  provider               : "facebook"
-  facebook:
-    num_posts            : 10
+#comments:
+#  provider               : "facebook"
+#  facebook:
+#    order_by: "reverse_time"
+    
 
 twitter:
   username: "nkoval_"

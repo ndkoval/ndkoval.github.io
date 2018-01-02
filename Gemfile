@@ -32,3 +32,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jekyll-archives'
 gem "minimal-mistakes-jekyll"
+gem 'jemoji'
+
