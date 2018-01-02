@@ -26,8 +26,8 @@ twitter_username: nkoval_
 
 # Build settings
 markdown: kramdown
-#theme: minima
 theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
   - jekyll-archives

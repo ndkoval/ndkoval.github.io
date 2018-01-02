@@ -8,7 +8,10 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.6.2"
+#gem "jekyll", "~> 3.6.2"
+gem "jekyll-remote-theme"
+gem "github-pages", group: :jekyll_plugins
+
 gem 'jekyll-paginate'
 gem 'jekyll-admin', group: :jekyll_plugins
 
