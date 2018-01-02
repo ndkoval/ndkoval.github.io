@@ -4,6 +4,6 @@ layout: single
 permalink: /projects/
 author_profile: true
 comments: true
+toc: true
 ---
 
-TODO: add projects here
