@@ -10,7 +10,7 @@ toc_label: "Talks"
 
 The talks are arranged in themes. Some talks were given multiple times, choose the most recent one.
 
-## Lock-free algorithms testing
+## <a id="lock_free_algorithms_testing"/> Lock-free algorithms testing
 
 :ru: Latest: Joker 2017\\
 :ru: [Slides](/presentations/lin_check_joker_2017.pdf)
@@ -23,7 +23,7 @@ Writing multithreaded programs is hard, however, testing them is not easier at a
 {: .no_toc}
 :ru: SECR 2017: [slides]() and [video]()
 
-## Dl-Check: potential deadlock detection
+## <a id="dl_check"/> How to find deadlock not getting into it
 
 :ru: Latest: JEEConf 2017\\
 :gb: [Slides](/presentations/dl_check_jeeconf_2017.pdf)

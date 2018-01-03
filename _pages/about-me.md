@@ -15,10 +15,7 @@ toc_label: Table of contents
 }
 </style>
 
-I am in the second year of a master’s degree program in computer sciences at ITMO University, where I have been also teaching a course on concurrency programming. As for my current research projects, basically, I am working on concurrent algorithms and tools for testing and verification these algorithms for correctness. In addition, I am close to industry, thus some my projects are related to industrial problems.
-
-As for my publications, talks and projects, you can find them on this site.
-
+I am a research engineer at dxLab research group at Devexperts and in the second year of a master’s degree program in computer sciences at ITMO University, where I have been also teaching a course on concurrency programming. I am broadly interested in concurrent algorithms, their verification and practical applicable code analysis approaches. See my [projects](/projects), [publications](/publications) and [given talks](/talks) on this site.
 
 ## Research interests
 * Concurrent data structures and algorithms
@@ -62,12 +59,10 @@ Anticipated graduation date: June 2018
 Teaching a course on concurrent programming
 
 **Devexperts,  St. Petersburg** --- *Software developer*\\
-<span class="date">MARCH 2014 -- PRESENT</span>
-* Developed [*time-test*]() library for testing time-based functionality in Java programs
-* Developed [*Usages*]() tool for finding code usages among Maven repositories
+<span class="date">MARCH 2014 -- JULY 2016</span>
 * Developed new features in high-performance messaging library
   * This library is used in almost all company projects
-  * <http://www.dxfeed.com/dxfeed-api>, <https://github.com/Devexperts/QD> 
+  * <http://www.dxfeed.com/dxfeed-api>, <https://github.com/Devexperts/QD>
 * Developed both server-side and mobile parts of financial platforms
 
 

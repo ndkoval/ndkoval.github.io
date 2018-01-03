@@ -30,10 +30,21 @@ theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
-  - jekyll-archives
   - jemoji
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
 
 minimal_mistakes_skin: "contrast"
+search                   : true
+
+#Archive settings
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
 # breadcrumbs: true
 
@@ -52,6 +63,7 @@ defaults:
       author_profile: true
       share: true
       related: true
+      permalink: '/blog/:title'
 
 timezone: Europe/Moscow
 
@@ -74,6 +86,9 @@ author:
   email  : ndkoval@yandex.ru
 
 include: ["_pages"]
+
+compress_html:
+  clippings: all
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
