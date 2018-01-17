@@ -1,15 +1,13 @@
 ---
-title: Welcome to my blog!
+title: Kotlin coroutines specification
 read_time: true
-comments: true
 layout: single
 author_profile: true
-share: true
 related: true
-permalink: "/blog/:title"
-date: '2018-01-04 00:00:00'
-tags: motivation
+permalink: "/kotlin-coroutines-spec"
 ---
+
+If you need to understand coroutines, please, 
 
 Hi everyone! This is my first post in the blog and now I want to explain why I decided to keep it.
 
