@@ -7,12 +7,32 @@ related: true
 permalink: "/kotlin-coroutines-spec"
 ---
 
-If you need to understand coroutines, please, 
+This page describes Kotlin coroutines from the algorithmic point of view. It also contains a very short overview of basic features. For more information see the [official guide](https://github.com/Kotlin/kotlinx.coroutines/blob/master/coroutines-guide.md).
 
-Hi everyone! This is my first post in the blog and now I want to explain why I decided to keep it.
+# Intro
 
-First of all, let me talk some historical details. This is my first post in the blog and I am going to explain why I want to keep it. 
 
-Всем привет! В своем первом посте я хотел бы рассказать, почему решил вести этот блог. Однако, для начала стоит пояснить, чем я занимаюсь.
+# Cancellation
 
-Последние 1.5 года я работаю в позиции research engineer в компании Devexperts и занимаюсь разработкой многопоточных алгоритмов, их верифицированием и тестированием и анализом программ. За этот небольшой промежуток времени уже удалось накопить определенную компетенцию в различных вопросах и реализовать несколько практически-полезных инструментов. Однако, эти инструменты и компетенция важны не только компании Devexperts в частности, но и индустрии в целом.
+В процессе ожидания (или до старта) корутина может быть отменена. В случае текущего исполнения, она кинет CancellationException в том месте, где проснётся. Если же ешё не была запущена, то будет удалена из очереди на исполнения.
+
+Так же у корутины могут быть дети. Они тоже должны отменяться при отмене родителя.
+
+# Communication between coroutines
+
+## Channels
+
+Две операции:
+* recieve(): T
+* send(val: T)
+
+SPSC, SPMC, MPSC channels
+channel with cache
+
+## Select expression
+
+Cancellation: CASN + Could be optimized by HTM
+
+## Mutexes
+
+Специальная блокировка между корутинами. Логично продолжать ожидающую корутину в том же потоке (как и с каналами), но тут вероятность успеха от такой оптимизации кажется куда больше. Тоже можно использовать релаксированную приоритетную очередь.
