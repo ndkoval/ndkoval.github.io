@@ -15,7 +15,7 @@ toc_label: Table of contents
 }
 </style>
 
-I am a research engineer at dxLab research group at Devexperts and in the second year of a master’s degree program in computer sciences at ITMO University, where I have been also teaching a course on concurrency programming. I am broadly interested in concurrent algorithms, their verification and practical applicable code analysis approaches. See my [projects](/projects), [publications](/publications) and [given talks](/talks) on this site.
+I am a research engineer at dxLab research group at Devexperts and in the second year of a master’s degree program in computer sciences at ITMO University, where I have been also teaching a course on concurrency programming. I am mainly interested in concurrent algorithms, their verification and practical applicable code analysis approaches. See my [projects](/projects), [publications](/publications) and [given talks](/talks) on this site.
 
 ## Research interests
 * Concurrent data structures and algorithms
