@@ -4,7 +4,7 @@ layout: single
 permalink: /publications/
 author_profile: true
 comments: true
-toc: true
+toc: false
 toc_label: Publications
 ---
 
@@ -12,6 +12,6 @@ The publications are grouped by year. You may also find my profile on [Google Sc
 
 ## 2017
 
-### <a id="dl_check_17"/> Dl-Check: dynamic potential deadlock detection tool for Java programs
-*TMPA 2017, **N. Koval**, D. Tsitelov and R. Elizarov*{: style="color: gray"}\\
-Accepted for publication in Communications in Computer and Information Science series by Springer
+<a id="dl_check_17"/> 
+**N. Koval**, D. Tsitelov and R. Elizarov (2017) *Dl-Check: dynamic potential deadlock detection tool for Java programs*\\
+<span style="color: dimgray">In: Itsykson V., Scedrov A., Zakharov V. (eds) Tools and Methods of Program Analysis. TMPA 2017. Communications in Computer and Information Science, vol 779. Springer, Cham</span>
