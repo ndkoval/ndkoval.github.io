@@ -77,7 +77,7 @@ author:
   name   : "Nikita Koval"
   avatar : "/assets/images/bio-photo.jpg"
   location: "St. Petersburg, Russia"
-  bio    : "I am a research engineer on concurrency and code analysis problems at Devexperts and also teach a course on concurrent programming at ITMO University."
+  bio    : "Research engineer on concurrency and code analysis problems"
   linkedin: ndkoval
   twitter: nkoval_
   email  : ndkoval@yandex.ru
