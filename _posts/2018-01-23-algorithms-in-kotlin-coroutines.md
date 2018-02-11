@@ -11,6 +11,9 @@ related: true
 permalink: "/blog/:title"
 ---
 
+This post has some inaccuracies. An updated one with new communication algorithms will be published after a while.
+{: .notice--warning}
+
 The post describes Kotlin coroutines from the algorithmic point of view with a very short overview of basic features. The main reason to write this post is to collect my knowledge of the current Kotlin coroutines implementation and thoughts about possible optimizations. Thanks to [Roman Elizarov](https://www.linkedin.com/in/relizarov) for the help with understanding all ins and outs.
 
 For more information about coroutines features see the [official guide](https://github.com/Kotlin/kotlinx.coroutines/blob/master/coroutines-guide.md).
