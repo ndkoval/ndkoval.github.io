@@ -1,18 +1,17 @@
 ---
 read_time: true
 comments: true
-layout: single
+layout: single_wide
 author_profile: true
 share: true
 related: true
 permalink: "/blog/:title"
 title: Time machine for Java
-date: '2018-02-16 00:00:00'
+date: '2018-02-15 00:00:00'
 tags: time-test java concurrency
 ---
 
-The article has been originally written for Devexperts' blog: <https://blog.devexperts.com/time-machine-for-java>.
-{: .notice--info}
+This article describes a tool developed to support unit-testing of time-dependent logic in Java applications. Originally it has been written for [Devexperts' blog](https://blog.devexperts.com/time-machine-for-java).
 
 It is not always simple to write unit tests for time-dependent functionality. In straightforward situations simply replacing a method which returns the current time with a custom implementation will work. However, it is not enough for real programs testing. Let’s try to understand why such solutions do not work and what do we really want in order to test time-dependent logic.
 
@@ -101,7 +100,7 @@ As previously described, the primary challenge  of the `TestTimeProvider` implem
 
 **Test with TestTimeProvider:**
 
-```
+```java
 @Before
 public void setup() {
     // Use TestTimeProvider for this test
