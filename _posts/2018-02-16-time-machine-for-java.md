@@ -7,7 +7,7 @@ share: true
 related: true
 permalink: "/blog/:title"
 title: Time machine for Java
-date: '2018-02-15 00:00:00'
+date: '2018-02-16 00:00:00'
 tags: time-test java concurrency
 ---
 
