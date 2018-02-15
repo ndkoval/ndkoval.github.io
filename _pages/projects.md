@@ -17,7 +17,7 @@ Only those projects where I had a key role are presented here. For each of the p
 This tool finds potentially long operations invocations in UI thread. The long operation is determined as a method, which needs access to filesystem or network.  The approach is based on two main techniques – applying static analysis to widen the scope of detection and run-time code instrumentation to detect violations on the fly. Static analysis phase detects methods that contain potentially long operations on a Function Call Graph (FCG) and marks them as “long”. Collected data is used by the run-time part to widen the scope of analysis and report if a long operation is invoked in UI thread. The run-time analysis also detects if UI thread may be blocked too long due to acquiring a lock which could be held during a long operation invocation.
 
 
-<a id="lin-check"/>  ## Lin-Check
+## Lin-Check <a id="lin-check"/>
 *Framework for testing concurrent algorithms for correctness*\\
 <https://github.com/Devexperts/lin-check>
 
