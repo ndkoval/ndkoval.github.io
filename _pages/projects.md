@@ -48,7 +48,10 @@ TODO short description
 *Library for testing time-based functionality in Java programs*\\
 <https://github.com/Devexperts/time-test>
 
-TODO short description
+Time-test is a framework for testing time-based functionality. 
+
+### Related posts
+[Time machine for Java](http://nkoval.info/blog/time-machine-for-java)
 
 ## JAgent
 *Framework for simplifying java agents development*\\
