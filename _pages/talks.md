@@ -10,6 +10,15 @@ toc_label: "Talks"
 
 The talks are arranged in themes. Some talks were given multiple times, choose the most recent one.
 
+## <a id="lock_free_hashtables"/> On the way to efficient concurrent hash table
+
+:ru: Latest: JBreak 2018\\
+:ru: [Slides](/presentations/hashtables_jbreak_2018.pdf)
+
+{% include video id="BpgL2LGEhP4" provider="youtube" %}
+
+Nowadays, hash tables are probably the most used data structures, the performance of which influences many application’s components. However, is it that simple to write a fast implementation which uses all power of multi-core architectures? How efficient are the standard solutions in Java? We will try to get the answer to these and many other questions during this talk. We will touch on both theoretical aspects and some practical approaches for high-performance algorithms development.
+
 ## <a id="lock_free_algorithms_testing"/> Lock-free algorithms testing
 
 :ru: Latest: Joker 2017\\
