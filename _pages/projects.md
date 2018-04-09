@@ -42,13 +42,15 @@ Dl-Check determines potential deadlock as a lock hierarchy violation and finds t
 *Tool for finding code usages among Maven repositories*\\
 <https://github.com/Devexperts/usages>
 
-TODO short description
+*Usages* tool finds code usages in the specified Maven repositories. It indexes repositories, downloads required artifacts and scans ".class" files in them. The tool analyzes all kinds of dependencies: usages of fields and methods, extensions of classes and implementations of interfaces, usages of annotations, overrides of methods. The tool is separated into 2 parts: server application, which collects all information and analyzes classes, and a client one, which is implemented as IntelliJ Plugin. 
+{: .text-justify}
 
 ## Time-test
 *Library for testing time-based functionality in Java programs*\\
 <https://github.com/Devexperts/time-test>
 
-Time-test is a framework for testing time-based functionality. 
+*Time-test* helps to test time-dependent functionality via time virtualization. It is implemented as a Java agent and replaces all time-dependent methods invocations with its own implementations. Unlike other implementations, it works not with `System.currentTimeMillis()` and `System.nanoTime()` methods only, but with `Object.wait(..)`, `Thread.sleep(..)`, and `Unsafe.park(..)` as well. In addition, *time-test* has a special `waitUntilThreadsAreFrozen(timeout)` method which waits until all threads have done their work. 
+{: .text-justify}
 
 ### Related posts
 [Time machine for Java](http://nkoval.info/blog/time-machine-for-java)
