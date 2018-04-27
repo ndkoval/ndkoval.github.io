@@ -10,6 +10,15 @@ toc_label: "Talks"
 
 The talks are arranged in themes. Some talks were given multiple times, choose the most recent one.
 
+## <a id="htm_java"/> Hardware transactional memory in Java
+
+:ru: Latest: JPoint 2018\\
+:ru: [Slides](/presentations/htm_java_jpoint_2018.pdf)
+
+{% include video id="Plt8ZPlaLIU" provider="youtube" %}
+
+This talk is devoted to the transactional memory, which you can meet in modern processors more and more often and which is supposed to make the world of concurrency a better place. Both possible ways to use it and the already existing optimizations in OpenJDK based on it, along with the possibility to run transactions directly from Java code are discussed.
+
 ## <a id="lock_free_hashtables"/> On the way to efficient concurrent hash table
 
 :ru: Latest: JBreak 2018\\
