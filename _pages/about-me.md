@@ -15,7 +15,7 @@ toc_label: Table of contents
 }
 </style>
 
-I am a research engineer at dxLab research group at Devexperts and in the second year of a master’s degree program in computer sciences at ITMO University, where I have been also teaching a course on concurrency programming. I am mainly interested in concurrent algorithms, their verification and practical applicable code analysis approaches. See my [projects](/projects), [publications](/publications) and [given talks](/talks) on this site.
+I am a research in Kotlin team at JetBrains and going to be a PhD student at IST Austria from the Fall. I got both bachelor and master degrees at ITMO University, where I have been also teaching a course on concurrency programming. I am mainly interested in concurrent algorithms, their verification, and practical applicable code analysis approaches. See my [projects](/projects), [publications](/publications) and [given talks](/talks) on this site.
 
 ## Research interests
 * Concurrent data structures and algorithms
@@ -24,9 +24,11 @@ I am a research engineer at dxLab research group at Devexperts and in the second
 
 
 ## Education
+**IST Austria, Vienna** --- *PhD in Computer Science*\\
+<span class="date">2018 -- PRESENT</span>
+
 **ITMO University, St. Petersburg** --- *Master in Computer Science*\\
-<span class="date">2016 -- PRESENT</span>\\
-Anticipated graduation date: June 2018
+<span class="date">2016 -- 2018</span>\\
 
 **ITMO University, St. Petersburg** --- *Bachelor in Computer Science*\\
 <span class="date">2012 -- 2016</span>
@@ -47,6 +49,10 @@ Anticipated graduation date: June 2018
 
 
 ## Work experience
+**IST Austria, Vienna** --- *Scientific intern*\\
+<span class="date">FEBRAURY -- JUNE 2018</span>\\
+Worked on supporting relaxed data structures in Lin-Check tool for testing concurrent algorithms, and an algorithm for a rendezvous channel for CSP programming.
+
 **Devexperts (dxLab),  St. Petersburg** --- *Research engineer*\\
 <span class="date">JULY 2016 -- PRESENT</span>
 
@@ -89,17 +95,6 @@ Individual programming contest provided by Thumbtack company
 
 **ACM ICPC World Finals, St. Petersburg** --- *Volunteer*\\
 <span class="date">JULY 2013 -- JULY 2013</span>
-
-
-## Conference attendance
-**Devoxx 2016, Antwerp**\\
-<span class="date">9 -- 11 NOVEMBER 2016</span>
-
-**Joker 2016, St. Petersburg**\\
-<span class="date">14 -- 15 OCTOBER 2016</span>
-
-**Joker 2015, St. Petersburg**\\
-<span class="date">16 -- 17 OCTOBER 2015</span>
 
 
 ## Language proficiency
