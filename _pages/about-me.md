@@ -5,7 +5,7 @@ classes: wide
 permalink: /about-me/
 author_profile: true
 comments: true
-toc: true
+toc: false
 toc_label: Table of contents
 ---
 
