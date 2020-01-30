@@ -16,7 +16,7 @@
 title: "Nikita Koval | Personal blog" 
 title_separator: "-"
 name: "Nikita Koval"
-description: "Nikita Koval | Personal website and blog"
+#description: "Nikita Koval | Personal website and blog"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nkoval.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nkoval_
@@ -78,7 +78,7 @@ author:
   name   : "Nikita Koval"
   avatar : "/assets/images/bio-photo.jpg"
   location: "St. Petersburg, Russia"
-  bio    : "Research engineer on concurrency and code analysis problems"
+  bio    : "Researcher in CS"
   linkedin: ndkoval
   twitter: nkoval_
   email  : ndkoval@yandex.ru
