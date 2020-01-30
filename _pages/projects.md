@@ -1,10 +1,11 @@
 ---
 title:  "Projects"
 layout: single
+classes: wide
 permalink: /projects/
 author_profile: true
 comments: true
-toc: true
+toc: false
 toc_label: Projects
 ---
 
