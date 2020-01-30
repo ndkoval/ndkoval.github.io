@@ -7,6 +7,34 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+html {
+  font-size: 7px; // change to whatever
+
+  @include breakpoint($small) {
+    font-size: 11px; // change to whatever
+  }
+
+  @include breakpoint($medium) {
+    font-size: 13px; // change to whatever
+  }
+
+  @include breakpoint($large) {
+    font-size: 16px; // change to whatever
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 18px; // change to whatever
+  }
+}
+
+.page__content {
+  text-align: justify;
+}
+
+.header-link {
+  display: none;
+}
+
 .sidebar {
   @include clearfix();
   margin-bottom: 1em;

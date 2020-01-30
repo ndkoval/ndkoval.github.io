@@ -8,55 +8,70 @@ toc: true
 toc_label: Projects
 ---
 
-Only those projects where I had a key role are presented here. For each of the projects short descriptions, links to my blog posts, publications, and talks are attached.
+Only those projects where I had a key role are mentioned. For each of the projects short descriptions and links to the related blog posts, publications, and talks are attached.
 
-## UI-Lag-Finder
-*Tool for detecting potential lags in UI threads*\\
-<https://github.com/Devexperts/uilagfinder>
+## Buffered Channels <a id="buffered-channels"/>
+*Improving data flow processing with new buffered channels in Kotlin Coroutines*
+Traditional concurrent programming involves manipulating shared mutable state. Alternatives to this programming style are communicating sequential processes (CSP) and actor models, which share data via explicit communication. These models have been known for almost half a century, and have recently had started to gain significant traction among modern programming languages. The common abstraction for communication between several processes is the *channel*. Although channels are similar to producer-consumer data structures, they have different semantics and support additional operations, such as the `select` expression. Despite their growing popularity, most known implementations of channels use lock-based data structures and can be rather inefficient. Under this project, I am working on efficient and scalable channel algorithms, which are far faster than the already existing ones. New related publications are coming soon.
 
-This tool finds potentially long operations invocations in UI thread. The long operation is determined as a method, which needs access to filesystem or network.  The approach is based on two main techniques – applying static analysis to widen the scope of detection and run-time code instrumentation to detect violations on the fly. Static analysis phase detects methods that contain potentially long operations on a Function Call Graph (FCG) and marks them as “long”. Collected data is used by the run-time part to widen the scope of analysis and report if a long operation is invoked in UI thread. The run-time analysis also detects if UI thread may be blocked too long due to acquiring a lock which could be held during a long operation invocation.
-
-
-## Lin-Check <a id="lin-check"/>
-*Framework for testing concurrent algorithms for correctness*\\
-<https://github.com/Devexperts/lin-check>
-
-**Lin-check** is a framework for testing concurrent data structure for correctness. In order to use the framework, operations to be executed concurrently should be specified with the necessary information for an execution scenario generation. With the help of this specification, **Lin-Check** generates different scenarios, executes them in concurrent environment several times and then checks that the execution results are correct (usually, linearizable, but different relaxed contracts can be used as well).
+### Related publications
+* [Scalable FIFO Channels for Programming via Communicating Sequential Processes](/publications/#europar19-channels) @ Euro-Par 2019
+* [POSTER: Lock-free channels for programming via communicating sequential processes](/publications/#ppopp19-channels) @ PPoPP 2019
 
 ### Related talks
-[Lock-free algorithms testing](/talks/#lock_free_algorithms_testing)
+* [How we created a channel algorithm in Kotlin Coroutines](/talks/#channels-jpoint-2019)
+* [Channels in Kotlin Coroutines](/talks/#channels-joker-2018)
 
-## Dl-Check
+
+## SegmentQueueSynchronizer <a id="segment-queue-synchronizer"/>
+*Abstraction for fair synchronization and communication primitives*
+
+This project was started with a novel sempahore algorithm for Kotlin Coroutines (see the [source code](https://github.com/Kotlin/kotlinx.coroutines/blob/master/kotlinx-coroutines-core/common/src/sync/Semaphore.kt)). After that, we decided to create a flexible abstraction for implementing synchronization and communication primitives. The one is called `SegmentQueueSynchronizer` and makes the development of such primitives much faster making them simpler and more efficient at the same time. Since we also support abortability of waiting requests (e.g., `lock` operation can be aborted by timeout) and these algorithm parts are usually the most complicated and error-prone ones, we decided to prove everything formally in the Iris framework for Coq. Now we are completing the proofs and working on experiments, and looking forward to a new paper soon!
+
+## Lincheck <a id="lin-check"/>
+*Framework for testing concurrency on JVM*\\
+<https://github.com/Kotlin/kotlinx-lincheck>
+
+*Lincheck* is a practical tool for testing concurrent algorithms implemented in JVM-based languages, such as Java, Kotlin, or Scala. Roughly, *lincheck* takes the list of operations on the  data structure to be tested, generates a series of concurrent scenarios, executes them in either stress testing or model checking mode, and checks whether there exists some sequential execution which can explain the results. 
+I use this tool to test the concurrent algorithms in the Kotlin Coroutines library and to check a set of student assignments. 
+In addition, it was used to find several known and unknown bugs in popular libraries, such as the race between removing and adding an element to the head of the Java's `ConcurrentLinkedDeque`.
+
+### Related publications
+* [POSTER: Testing Concurrency on the JVM with Lincheck](/publications/#ppopp20-lincheck) @ PPoPP 2020
+
+### Related talks
+* [Testing concurrent algorithms with Lincheck](/talks/#lincheck-joker-2019)
+* [Lincheck: testing concurrent data structures on Java](#lincheck-hydra-2019)
+* [Lock-free algorithms testing](/talks/#lock_free_algorithms_testing)
+TODO Hydra and Joker
+
+## Dl-Check  <a id="dl-check"/>
 *Tool for finding potential deadlocks via dynamic analysis*\\
 <https://github.com/Devexperts/dlcheck>
 
-Dl-Check determines potential deadlock as a lock hierarchy violation and finds them via dynamic analysis in Java programs. This tool is implemented as Java agent and injects analysis code within class transformation during class loading, therefore it’s possible to use Dl-Check without any code change. The base algorithm for finding lock hierarchy violations is based on new cycles detection in the lock-order graph. For this purpose, an algorithm for incremental topological order maintenance is used. However, existing solutions are not efficient for concurrent execution, so currently I am working on scalable topological order maintenance algorithm.
-
-### Related talks
-[How to find deadlock not getting into it](/talks/#dl_check)
+*Dl-Check* determines potential deadlock as a lock hierarchy violation and finds them via dynamic analysis in Java programs. This tool is implemented as Java agent and injects analysis code within class transformation during class loading, therefore it’s possible to use *Dl-Check* without any code change. The base algorithm for finding lock hierarchy violations is based on new cycles detection in the lock-order graph. For this purpose, an algorithm for incremental topological order maintenance is used.
 
 ### Related publications
-[Dl-Check: dynamic potential deadlock detection tool for Java programs](/publications/#dl_check_17)
+* [Dl-Check: dynamic potential deadlock detection tool for Java programs](/publications/#dl_check_17) @ TMPA 2017
 
-## Usages
-*Tool for finding code usages among Maven repositories*\\
-<https://github.com/Devexperts/usages>
+### Related talks
+* [How to find deadlock not getting into it](/talks/#dl_check)
 
-*Usages* tool finds code usages in the specified Maven repositories. It indexes repositories, downloads required artifacts and scans ".class" files in them. The tool analyzes all kinds of dependencies: usages of fields and methods, extensions of classes and implementations of interfaces, usages of annotations, overrides of methods. The tool is separated into 2 parts: server application, which collects all information and analyzes classes, and a client one, which is implemented as IntelliJ Plugin. 
-{: .text-justify}
-
-## Time-test
+## Time-test <a id="time-test"/>
 *Library for testing time-based functionality in Java programs*\\
 <https://github.com/Devexperts/time-test>
 
-*Time-test* helps to test time-dependent functionality via time virtualization. It is implemented as a Java agent and replaces all time-dependent methods invocations with its own implementations. Unlike other implementations, it works not with `System.currentTimeMillis()` and `System.nanoTime()` methods only, but with `Object.wait(..)`, `Thread.sleep(..)`, and `Unsafe.park(..)` as well. In addition, *time-test* has a special `waitUntilThreadsAreFrozen(timeout)` method which waits until all threads have done their work. 
-{: .text-justify}
+*Time-test* helps to test time-dependent functionality via time virtualization. It is implemented as a Java agent and replaces all time-dependent methods invocations with its own implementations on the fly. Unlike other implementations, it works not with `System.currentTimeMillis()` and `System.nanoTime()` methods only, but with `Object.wait(..)`, `Thread.sleep(..)`, and `Unsafe.park(..)` as well. In addition, *time-test* has a special `waitUntilThreadsAreFrozen(timeout)` method which waits until all threads have done their work. 
 
 ### Related posts
-[Time machine for Java](http://nkoval.info/blog/time-machine-for-java)
+* [Time machine for Java](http://nkoval.info/blog/time-machine-for-java)
 
-## JAgent
+## Usages  <a id="usages"/>
+*Tool for finding code usages among Maven repositories*\\
+<https://github.com/Devexperts/usages>
+
+*Usages* tool finds code usages in the specified Maven repositories. It indexes repositories, downloads required artifacts, and scans `.class` files in them. The tool analyzes all kinds of dependencies: usages of fields and methods, extensions of classes and implementations of interfaces, usages of annotations, overrides of methods, and so on. The tool is separated into 2 parts: server application, which collects all information and analyzes classes, and a client one, which is implemented as an IntelliJ IDEA plugin. 
+
+## JAgent  <a id="jagent"/>
 *Framework for simplifying java agents development*\\
 <https://github.com/Devexperts/jagent>
-
-TODO short description
