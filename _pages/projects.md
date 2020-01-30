@@ -12,6 +12,7 @@ Only those projects where I had a key role are mentioned. For each of the projec
 
 ## Buffered Channels <a id="buffered-channels"/>
 *Improving data flow processing with new buffered channels in Kotlin Coroutines*
+
 Traditional concurrent programming involves manipulating shared mutable state. Alternatives to this programming style are communicating sequential processes (CSP) and actor models, which share data via explicit communication. These models have been known for almost half a century, and have recently had started to gain significant traction among modern programming languages. The common abstraction for communication between several processes is the *channel*. Although channels are similar to producer-consumer data structures, they have different semantics and support additional operations, such as the `select` expression. Despite their growing popularity, most known implementations of channels use lock-based data structures and can be rather inefficient. Under this project, I am working on efficient and scalable channel algorithms, which are far faster than the already existing ones. New related publications are coming soon.
 
 ### Related publications
