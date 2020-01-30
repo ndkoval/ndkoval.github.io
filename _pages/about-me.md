@@ -17,14 +17,6 @@ toc_label: Table of contents
 
 I am a researcher in the Kotlin team at JetBrains and getting PhD in the field of concurrency. I got both bachelor's and master's degrees at ITMO University, where I have also been teaching a course on concurrent programming. My primary research interests are concurrent data structures and algorithms, their verification, and practically applicable code analysis approaches. See my [projects](/projects), [publications](/publications), and [given talks](/talks) on this site. I am extremely happy to have being supervised by [Dan Alistarh](https://people.csail.mit.edu/alistarh/) from IST Austria and [Roman Elizarov](https://www.linkedin.com/in/relizarov) from JetBrains.
 
-I am very lucky to work with the folllowing people:
-
-* Maria Sokolova (intern, now developer @ JetBrains)
-* Alexander Fedorov (intern, now student @ HSE)
-* Dmitry Khalanskiy (intern, now developer @ JetBrains)
-* Alisa Koroleva (intern, now developer @ ...)
-* Vitaly Aksenov (now lecturer @ ITMO)
-
 
 ## Education
 **IST Austria, Klosterneuburg** --- *PhD student in CS*\\

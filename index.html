@@ -4,14 +4,27 @@ author_profile: true
 ---
 
 <p>
-Hi! I am Nikita Koval and you are on my personal site and blog. Here you can find all recent information about me and my projects. Do not hesitate to drop me a line if you have an interesting topic to discuss.
+Hi! I am Nikita Koval and you are on my personal site and blog.
+I work as a researcher in the Kotlin team at JetBrains and getting PhD in the field of concurrency.
+My primary research interests are concurrent data structures and algorithms, their verification, and practically applicable code analysis approaches.
+Here you can find all the recent information about me and my projects.
+Do not hesitate to drop me a line if you have an interesting topic to discuss.
+</p>
 
- 
+<p>
+I am extremely happy to have being supervised by Dan Alistarh from IST Austria and Roman Elizarov from JetBrains, and very lucky to work with the folllowing people:
+<ul>
+<li>Maria Sokolova (intern, now developer @ JetBrains)</li>
+<li>Alexander Fedorov (intern, now student @ HSE)</li>
+<li>Dmitry Khalanskiy (intern, now developer @ JetBrains)</li>
+<li>Alisa Koroleva (intern, now developer @ IFuture)</li>
+<li>Vitaly Aksenov (now lecturer @ ITMO)</li>
+</ul>
 </p>
 
 <!-- Show recent posts -->
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Blog Posts" }}</h3>
 
 {% for post in paginator.posts %}
   {% include archive-single.html %}
@@ -23,4 +36,3 @@ Hi! I am Nikita Koval and you are on my personal site and blog. Here you can fin
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag[1].size }}#{{ tag | first | downcase }}#{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tag_hashes = site_tags | split:',' | sort %}
-
