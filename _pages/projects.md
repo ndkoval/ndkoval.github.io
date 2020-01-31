@@ -45,7 +45,6 @@ In addition, it was used to find several known and unknown bugs in popular libra
 * [Testing concurrent algorithms with Lincheck](/talks/#lincheck-joker-2019)
 * [Lincheck: testing concurrent data structures on Java](#lincheck-hydra-2019)
 * [Lock-free algorithms testing](/talks/#lock_free_algorithms_testing)
-TODO Hydra and Joker
 
 ## Dl-Check  <a id="dl-check"/>
 *Tool for finding potential deadlocks via dynamic analysis*\\

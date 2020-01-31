@@ -25,6 +25,10 @@ I am a researcher in the Kotlin team at JetBrains and getting PhD in the field o
 <span class="date">UNE 2018 -- PRESENT</span>\\
 Primarily work on synchronization and communication primitives for Kotlin Coroutines (this is going to be a part of my PhD), but not limited by this topic. 
 
+**ITMO University, St. Petersburg** --- *Tutor*\\
+<span class="date">SEPTEMBER 2016 -- PRESENT</span>\\
+Teaching a course on concurrent programming.
+
 **IST Austria, Klosterneuburg** --- *Scientific intern*\\
 <span class="date">FEBRAURY -- JUNE 2018</span>\\
 Worked on supporting relaxed data structures in Lincheck tool for testing concurrent algorithms and on algorithms for synchronous queues.
@@ -32,10 +36,6 @@ Worked on supporting relaxed data structures in Lincheck tool for testing concur
 **Devexperts,  St. Petersburg** --- *Research engineer*\\
 <span class="date">JULY 2016 -- JUNE 2018</span>\\
 Worked on several research projects (some of them are mentioned on the [Projects](/projects) page) and guided students.
-
-**ITMO University, St. Petersburg** --- *Tutor*\\
-<span class="date">SEPTEMBER 2016 -- PRESENT</span>\\
-Teaching a course on concurrent programming.
 
 **Devexperts,  St. Petersburg** --- *Software developer*\\
 <span class="date">MARCH 2014 -- JULY 2016</span>\\
