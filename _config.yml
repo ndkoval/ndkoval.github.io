@@ -16,9 +16,9 @@
 title: "Nikita Koval | Personal website" 
 title_separator: "-"
 name: "Nikita Koval"
-#description: "Nikita Koval | Personal website and blog"
+#description: "Nikita Koval | Personal website"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nkoval.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nikitakoval.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nkoval_
 repository: "ndkoval/ndkoval.github.io"
 # Build settings

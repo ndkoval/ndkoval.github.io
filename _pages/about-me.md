@@ -16,14 +16,14 @@ toc_label: Table of contents
 }
 </style>
 
-I am a researcher in the Kotlin team at JetBrains and getting PhD in the field of concurrency. I got both bachelor's and master's degrees at ITMO University, where I have also been teaching a course on concurrent programming. My primary research interests are concurrent data structures and algorithms, their verification, and practically applicable code analysis approaches. See my [projects](/projects), [publications](/publications), and [given talks](/talks) on this site. I am extremely happy to have being supervised by [Dan Alistarh](https://people.csail.mit.edu/alistarh/) from IST Austria and [Roman Elizarov](https://www.linkedin.com/in/relizarov) from JetBrains.
+I am a researcher in the Kotlin team at JetBrains and lead a Concurrent Computing lab at JetBrains Research, working on a PhD in the field of concurrency at the same time. I got both bachelor's and master's degrees at ITMO University, where I have also been teaching a course on concurrent programming. My primary research interests are concurrent data structures and algorithms, their verification, and practically applicable code analysis approaches. See my [projects](/projects), [publications](/publications), and [given talks](/talks) on this site. I am extremely happy to have being supervised by [Dan Alistarh](https://people.csail.mit.edu/alistarh/) from IST Austria and [Roman Elizarov](https://www.linkedin.com/in/relizarov) from JetBrains.
 {: .text-justify}
 
 
 ## Work experience
 **JetBrains, St. Petersburg** --- *Researcher*\\
-<span class="date">UNE 2018 -- PRESENT</span>\\
-Primarily work on synchronization and communication primitives for Kotlin Coroutines (this is going to be a part of my PhD), but not limited by this topic. 
+<span class="date">JUNE 2018 -- PRESENT</span>\\
+Primarily work on synchronization and communication primitives for Kotlin Coroutines (this is going to be a part of my PhD), but not limited by this topic.
 
 **ITMO University, St. Petersburg** --- *Tutor*\\
 <span class="date">SEPTEMBER 2016 -- PRESENT</span>\\
@@ -31,7 +31,7 @@ Teaching a course on concurrent programming.
 
 **IST Austria, Klosterneuburg** --- *Scientific intern*\\
 <span class="date">FEBRAURY -- JUNE 2018</span>\\
-Worked on supporting relaxed data structures in Lincheck tool for testing concurrent algorithms and on algorithms for synchronous queues.
+Worked on supporting relaxed data structures in Lincheck tool for testing concurrent algorithms and the algorithm for synchronous queue, later published.
 
 **Devexperts,  St. Petersburg** --- *Research engineer*\\
 <span class="date">JULY 2016 -- JUNE 2018</span>\\
@@ -43,7 +43,7 @@ Developed new features in high-performance messaging library as well as in finan
 
 
 ## Recent service
-**Hydra [2019](https://2019.hydraconf.com/), [2020](https://hydraconf.com/)** (PC member)\\
+**Hydra [2022](https://hydraconf.com/), [2021](https://2021.hydraconf.com/), [2020](https://2020.hydraconf.com/), [2019](https://2019.hydraconf.com/)** (PC member)\\
 **PPoPP [2019](https://ppopp19.sigplan.org/)** (Artifact evaluation committee)
 
 ## Education
@@ -81,6 +81,8 @@ Dynamic potential deadlock detection tool development.
 
 
 ## Volunteer experience
+**ICPC World Finals 2020** --- *Volunteer*
+
 **NEERC 2013, 2014, and 2015, St. Petersburg** --- *Technical Committee Volunteer*\\
 Northeastern European Regional Contest
 
