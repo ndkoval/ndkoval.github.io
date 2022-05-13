@@ -17,7 +17,7 @@ Since I am working on communication and synchronization primitives for Kotlin, I
 
 ## How we created a channel algorithm in Kotlin Coroutines <a id="channels-jpoint-2019"/>
 :ru: JPoint 2019\\
-:en: [Slides](/presentations/jpoint_2019_channels.pdf)
+:us: [Slides](/presentations/jpoint_2019_channels.pdf)
 
 {% include video id="cdpQMDgQP8Y" provider="youtube" %}
 
@@ -27,7 +27,7 @@ In this talk, we'll discuss which channel algorithms other programming languages
 
 ## Channels in Kotlin Coroutines <a id="channels-joker-2018"/>
 :ru: Joker 2018\\
-:en: [Slides](/presentations/joker_2018_channels.pdf)
+:us: [Slides](/presentations/joker_2018_channels.pdf)
 
 {% include video id="XHMXyYlQ8Eg" provider="youtube" %}
 
@@ -41,7 +41,7 @@ This set of talks is about [Lincheck](/projects/#lin-check) tool for testing con
 
 ## Testing concurrent algorithms with Lincheck <a id="lincheck-joker-2019"/>
 :ru: Joker 2019\\
-:en: [Slides](/presentations/joker_2019_lincheck.pdf)
+:us: [Slides](/presentations/joker_2019_lincheck.pdf)
 
 {% include video id="9cB36asOjPo" provider="youtube" %}
 
@@ -50,7 +50,7 @@ Everybody knows that concurrent programming is bug-prone. Moreover, some bugs in
 
 ## Lincheck: testing concurrent data structures on Java <a id="lincheck-hydra-2019"/>
 :ru: Hydra 2019\\
-:en: [Slides](/presentations/hydra_2019_lincheck.pdf)
+:us: [Slides](/presentations/hydra_2019_lincheck.pdf)
 
 {% include video id="hwbpUEGHvvY" provider="youtube" %}
 
