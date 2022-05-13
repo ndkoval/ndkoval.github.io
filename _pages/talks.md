@@ -109,4 +109,3 @@ Deadlocks are one of the main problems in multithreaded programming. This talk p
 {: .no_toc}
 :ru: JPoint 2017: [slides]() and [video]()\\
 :ru: JBreak 2017: [slides]() and [video]()
-
