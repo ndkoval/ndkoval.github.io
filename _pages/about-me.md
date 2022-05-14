@@ -23,11 +23,11 @@ I am a researcher in the [Kotlin](https://kotlinlang.org/) team at JetBrains and
 ## Work experience
 **JetBrains Research** -- *Lead of the Concurrent Computing lab*\\
 <span class="date">AUGUST 2020 -- PRESENT</span>\\
-TODO
+Conduct research on concurrent algorithms and approaches to test them, guide students. See the [Projects](/projects/) page for details.
 
 **JetBrains** --- *Researcher*\\
 <span class="date">JUNE 2018 -- PRESENT</span>\\
-Primarily work on synchronization and communication primitives for Kotlin Coroutines (this is going to be a part of my PhD), but not limited by this topic.
+Primarily, work on synchronization and communication primitives for Kotlin Coroutines (which will be an essential part of my PhD) and improve the Lincheck tool for testing concurrent data structures.
 
 **ITMO University, St. Petersburg** --- *Tutor*\\
 <span class="date">SEPTEMBER 2016 -- PRESENT</span>\\
@@ -35,16 +35,15 @@ Teaching a course on Concurrent Programming.
 
 **IST Austria, Klosterneuburg** --- *Scientific intern*\\
 <span class="date">FEBRAURY -- JUNE 2018</span>\\
-Worked on supporting relaxed data structures in Lincheck tool for testing concurrent algorithms and the algorithm for synchronous queue, later published.
+Worked on supporting relaxed data structures in the *Lincheck* tool for testing concurrent algorithms and on an algorithm for the synchronous queue, later [published](/publications/#europar19-channels) at EuroPar'19.
 
 **Devexperts,  St. Petersburg** --- *Research engineer*\\
 <span class="date">JULY 2016 -- JUNE 2018</span>\\
-Worked on several research projects (some of them are mentioned on the [Projects](/projects) page) and guided students.
+Worked on several research projects, including the *Lincheck* tool for testing concurrent data structures and the *Dl-Check* tool for finding potential deadlocks at run-time. Guided students, helped in organizing summer internships.
 
 **Devexperts,  St. Petersburg** --- *Software developer*\\
 <span class="date">MARCH 2014 -- JULY 2016</span>\\
-Developed new features in high-performance messaging library as well as in financial platforms.
-
+Developed new features in a high-performance messaging [library](https://github.com/devexperts/QD) as well as in financial platforms.
 
 ## Recent service
 **Hydra [2022](https://hydraconf.com/), [2021](https://2021.hydraconf.com/), [2020](https://2020.hydraconf.com/), [2019](https://2019.hydraconf.com/)** (PC member)\\
