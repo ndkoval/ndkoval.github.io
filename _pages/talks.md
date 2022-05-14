@@ -16,8 +16,8 @@ Most of the talks are arranged by projects. Some talks were given multiple times
 Since I am working on communication and synchronization primitives for Kotlin, I gave several talks about this project.
 
 ## Synchronization primitives can be faster with SegmentQueueSynchronizer <a id="hydra-2020-sqs"/>
-:us: Hydra 2020\\
-:us: [Slides](/presentations/hydra_2020_sqs.pdf)
+:gb: Hydra 2020\\
+:gb: [Slides](/presentations/hydra_2020_sqs.pdf)
 
 {% include video id="2uxsNJ0TdIM" provider="youtube" %}
 
@@ -25,7 +25,7 @@ This project has been started with a novel sempahore algorithm for Kotlin Corout
 
 ## How we created a channel algorithm in Kotlin Coroutines <a id="channels-jpoint-2019"/>
 :ru: JPoint 2019\\
-:us: [Slides](/presentations/jpoint_2019_channels.pdf)
+:gb: [Slides](/presentations/jpoint_2019_channels.pdf)
 
 {% include video id="cdpQMDgQP8Y" provider="youtube" %}
 
@@ -35,7 +35,7 @@ In this talk, we'll discuss which channel algorithms other programming languages
 
 ## Channels in Kotlin Coroutines <a id="channels-joker-2018"/>
 :ru: Joker 2018\\
-:us: [Slides](/presentations/joker_2018_channels.pdf)
+:gb: [Slides](/presentations/joker_2018_channels.pdf)
 
 {% include video id="XHMXyYlQ8Eg" provider="youtube" %}
 
@@ -49,7 +49,7 @@ This set of talks is about [Lincheck](/projects/#lin-check) tool for testing con
 
 ## Testing concurrent algorithms with Lincheck <a id="lincheck-joker-2019"/>
 :ru: Joker 2019\\
-:us: [Slides](/presentations/joker_2019_lincheck.pdf)
+:gb: [Slides](/presentations/joker_2019_lincheck.pdf)
 
 {% include video id="9cB36asOjPo" provider="youtube" %}
 
@@ -58,7 +58,7 @@ Everybody knows that concurrent programming is bug-prone. Moreover, some bugs in
 
 ## Lincheck: testing concurrent data structures on Java <a id="lincheck-hydra-2019"/>
 :ru: Hydra 2019\\
-:us: [Slides](/presentations/hydra_2019_lincheck.pdf)
+:gb: [Slides](/presentations/hydra_2019_lincheck.pdf)
 
 {% include video id="hwbpUEGHvvY" provider="youtube" %}
 
@@ -88,8 +88,8 @@ These talks are related to either relatively small projects or simply cannot be 
 
 ## Multi-Queues Can Be State-of-the-Art Priority Schedulers
 
-:us: PPoPP 2022\\
-:us: [Slides](/presentations/ppopp_2022_smq.pdf)
+:gb: PPoPP 2022\\
+:gb: [Slides](/presentations/ppopp_2022_smq.pdf)
 
 {% include video id="RpwUxBm4RYM" provider="youtube" %}
 
