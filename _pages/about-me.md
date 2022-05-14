@@ -21,7 +21,11 @@ I am a researcher in the [Kotlin](https://kotlinlang.org/) team at JetBrains and
 
 
 ## Work experience
-**JetBrains, Worldwide** --- *Researcher*\\
+**JetBrains Research** -- *Lead of the Concurrent Computing lab*\\
+<span class="date">AUGUST 2020 -- PRESENT</span>\\
+TODO
+
+**JetBrains** --- *Researcher*\\
 <span class="date">JUNE 2018 -- PRESENT</span>\\
 Primarily work on synchronization and communication primitives for Kotlin Coroutines (this is going to be a part of my PhD), but not limited by this topic.
 
