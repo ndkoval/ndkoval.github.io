@@ -9,7 +9,7 @@ toc: false
 toc_label: Publications
 ---
 
-The publications are grouped by year. You can also find my profile on [Google Scholar](https://scholar.google.com/citations?user=6ehffhoAAAAJ&hl=en).
+The publications are grouped by year. You can also find my profile on [Google Scholar](https://scholar.google.com/citations?user=6ehffhoAAAAJ&hl=en) and [dblp](https://dblp.org/pid/235/2563.html).
 
 
 ## 2022
