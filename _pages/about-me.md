@@ -23,7 +23,7 @@ I am a researcher in the [Kotlin](https://kotlinlang.org/) team at JetBrains and
 ## Work experience
 **JetBrains Research** -- *Lead of the Concurrent Computing lab*\\
 <span class="date">AUGUST 2020 -- PRESENT</span>\\
-Conduct research on concurrent algorithms and approaches to test them, guide students. See the [Projects](/projects/) page for details.
+Conduct research on concurrent algorithms and approaches to test them, guide students. See the [Projects](/projects/) page and the list of [publications](publications/) for details.
 
 **JetBrains** --- *Researcher*\\
 <span class="date">JUNE 2018 -- PRESENT</span>\\
