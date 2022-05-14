@@ -16,7 +16,7 @@ toc_label: Table of contents
 }
 </style>
 
-I am a researcher in the Kotlin team at JetBrains and lead a Concurrent Computing lab at JetBrains Research, working on a PhD in the field of concurrency at the same time. I got both bachelor's and master's degrees at ITMO University, where I have also been teaching a course on concurrent programming. My primary research interests are concurrent data structures and algorithms, their verification, and practically applicable code analysis approaches. See my [projects](/projects), [publications](/publications), and [given talks](/talks) on this site. I am extremely happy to have being supervised by [Dan Alistarh](https://people.csail.mit.edu/alistarh/) from IST Austria and [Roman Elizarov](https://www.linkedin.com/in/relizarov) from JetBrains.
+I am a researcher in the [Kotlin](https://kotlinlang.org/) team at JetBrains and lead a [Concurrent Computing lab](https://research.jetbrains.org/groups/concurrent_computing/) at JetBrains Research, working on a PhD in the field of concurrency at the same time. I got both bachelor's and master's degrees at ITMO University in St. Petersburg, where I have also been teaching a course on Concurrent Programming for over five years. My primary research interests are concurrent data structures and algorithms, their verification, and practically applicable code analysis. See my [projects](/projects), [publications](/publications), and [given talks](/talks) on this website. I am extremely happy to had been supervised by [Dan Alistarh](https://people.csail.mit.edu/alistarh/) from IST Austria and [Roman Elizarov](https://www.linkedin.com/in/relizarov) from JetBrains.
 {: .text-justify}
 
 
