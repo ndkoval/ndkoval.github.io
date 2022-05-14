@@ -19,7 +19,7 @@ with Anastasiia Postnikova, Giorgi Nadiradze, and Dan Alistarh. *PPoPP 2022*.
 
 ## 2021
 
-**A Scalable Concurrent Algorithm for Dynamic Connectivity [\[PDF\]](/publications/spaa21-dynamic-Connectivity.pdf)** <a id="spaa22-dynamic-connectivity"/>\\
+**A Scalable Concurrent Algorithm for Dynamic Connectivity [\[PDF\]](/publications/spaa21-dynamic-connectivity.pdf)** <a id="spaa21-dynamic-connectivity"/>\\
 with Alexander Fedorov and Dan Alistarh. *SPAA 2021*.
 
 
