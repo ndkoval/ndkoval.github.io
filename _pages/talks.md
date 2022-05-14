@@ -15,6 +15,14 @@ Most of the talks are arranged by projects. Some talks were given multiple times
 # Kotlin Coroutines
 Since I am working on communication and synchronization primitives for Kotlin, I gave several talks about this project.
 
+## Synchronization primitives can be faster with SegmentQueueSynchronizer <a id="hydra-2020-sqs"/>
+:us: Hydra 2020\\
+:us: [Slides](/presentations/hydra_2020_sqs)
+
+{% include video id="2uxsNJ0TdIM" provider="youtube" %}
+
+This project has been started with a novel sempahore algorithm for Kotlin Coroutines. After that, we decided to create a flexible abstraction for implementing synchronization and communication primitives. The one is called SegmentQueueSynchronizer and makes the development of such primitives much easier, making them simpler and more efficient. Since we also support abortability of waiting requests (e.g., lock operation can be aborted by timeout) and these algorithm parts are usually the most complicated and error-prone ones, we have proved everything formally via the Iris framework for Coq.
+
 ## How we created a channel algorithm in Kotlin Coroutines <a id="channels-jpoint-2019"/>
 :ru: JPoint 2019\\
 :us: [Slides](/presentations/jpoint_2019_channels.pdf)
@@ -77,6 +85,18 @@ Writing multithreaded programs is hard, however, testing them is not easier at a
 &nbsp;
 # Other
 These talks are related to either relatively small projects or simply cannot be assigned to any one. However, they are also important for me.
+
+## Multi-Queues Can Be State-of-the-Art Priority Schedulers
+
+:us: PPoPP 2022\\
+:us: [Slides](/presentations/ppopp_2022_smq.pdf)
+
+{% include video id="RpwUxBm4RYM" provider="youtube" %}
+
+Designing and implementing efficient parallel priority schedulers is an active research area. An intriguing proposed design is the Multi-Queue: given *n* threads and *m ≥ n* distinct priority queues, task insertions are performed uniformly at random, while, to delete, a thread picks two queues uniformly at random, and removes the observed task of higher priority. This approach scales well, and has probabilistic rank guarantees: roughly, the rank of each task removed, relative to remaining tasks in all other queues, is *O(m)* in expectation. Yet, the performance of this pattern is below that of well-engineered schedulers, which eschew theoretical guarantees for practical efficiency.
+
+We investigate whether it is possible to design and implement a Multi-Queue-based task scheduler that is both highly-efficient and has analytical guarantees. We propose a new variant called the **Stealing Multi-Queue (SMQ)**, a cache-efficient variant of the Multi-Queue, which leverages both queue affinity - each thread has a local queue, from which tasks are usually removed; but, with some probability, threads also attempt to steal higher-priority tasks from the other queues - and task batching, that is, the processing of several tasks in a single insert / remove step. These ideas are well-known for task scheduling without priorities; our theoretical contribution is showing that, despite relaxations, this design can still provide rank guarantees, which in turn implies bounds on total work performed. We provide a general SMQ implementation which can surpass state-of-the-art schedulers such as OBIM and PMOD in terms of performance on popular graph-processing benchmarks. Notably, the performance improvement comes mainly from the superior rank guarantees provided by our scheduler, confirming that analytically-reasoned approaches can still provide performance improvements for priority task scheduling.
+
 
 ## <a id="htm_java"/> Hardware transactional memory in Java
 

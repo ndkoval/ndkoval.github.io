@@ -81,12 +81,10 @@ Dynamic potential deadlock detection tool development.
 
 
 ## Volunteer experience
-**ICPC World Finals 2020** --- *Volunteer*
+**ICPC World Finals 2020, 2013** --- *Volunteer*
 
-**NEERC 2013, 2014, and 2015, St. Petersburg** --- *Technical Committee Volunteer*\\
+**NEERC 2015, 2013, and 2013, St. Petersburg** --- *Technical Committee Volunteer*\\
 Northeastern European Regional Contest
 
 **Thumbtack Cup 2014, Omsk** --- *Jury*\\
 Individual programming contest provided by Thumbtack company
-
-**ACM ICPC World Finals 2013, St. Petersburg** --- *Volunteer*
