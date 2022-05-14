@@ -17,7 +17,7 @@ Since I am working on communication and synchronization primitives for Kotlin, I
 
 ## Synchronization primitives can be faster with SegmentQueueSynchronizer <a id="hydra-2020-sqs"/>
 :us: Hydra 2020\\
-:us: [Slides](/presentations/hydra_2020_sqs)
+:us: [Slides](/presentations/hydra_2020_sqs.pdf)
 
 {% include video id="2uxsNJ0TdIM" provider="youtube" %}
 
