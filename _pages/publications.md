@@ -11,6 +11,18 @@ toc_label: Publications
 
 The publications are grouped by year. You can also find my profile on [Google Scholar](https://scholar.google.com/citations?user=6ehffhoAAAAJ&hl=en).
 
+
+## 2022
+
+**Multi-queues can be state-of-the-art priority schedulers [\[PDF\]](/publications/ppopp22-smq.pdf)** <a id="ppopp22-smq"/>\\
+with Anastasiia Postnikova, Giorgi Nadiradze, and Dan Alistarh. *PPoPP 2022*.
+
+## 2021
+
+**A Scalable Concurrent Algorithm for Dynamic Connectivity [\[PDF\]](/publications/spaa21-dynamic-Connectivity.pdf)** <a id="spaa22-dynamic-connectivity"/>\\
+with Alexander Fedorov and Dan Alistarh. *SPAA 2021*.
+
+
 ## 2020
 
 **POSTER: Testing Concurrency on the JVM with Lincheck [\[PDF\]](/publications/ppopp20-lincheck.pdf)** <a id="ppopp20-lincheck"/>\\
@@ -37,6 +49,6 @@ with Dan Alistarh and Roman Elizarov. *PPoPP 2019*.
 
 ## 2017
 
-<a id="dl_check_17"/> 
+<a id="dl_check_17"/>
 **Dl-Check: dynamic potential deadlock detection tool for Java programs [\[PDF\]](/publications/tmpa17-dlcheck.pdf)**\\
 with Dmitry Tsitelov and Roman Elizarov. *TMPA 2017*.
