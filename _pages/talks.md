@@ -13,7 +13,7 @@ Most of the talks are arranged by projects. Some talks were given multiple times
 
 &nbsp;
 # Kotlin Coroutines
-Since I am working on communication and synchronization primitives for Kotlin, I gave several talks about this project.
+Working on communication and synchronization primitives for Kotlin Coroutines, I gave several talks related to the project.
 
 ## Synchronization primitives can be faster with SegmentQueueSynchronizer <a id="hydra-2020-sqs"/>
 :gb: Hydra 2020\\
