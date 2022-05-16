@@ -58,9 +58,11 @@ it is crucial to test them properly. The tools below help with that on the JVM.
 ### Lincheck: a framework for testing concurrent data structures
 <https://github.com/Kotlin/kotlinx-lincheck>
 
-*Lincheck* is a practical tool for testing concurrent algorithms implemented in JVM-based languages, such as Java, Kotlin, or Scala. Roughly, *lincheck* takes the list of operations on the  data structure to be tested, generates a series of concurrent scenarios, executes them in either stress testing or model checking mode, and checks whether there exists some sequential execution which can explain the results.
-I use this tool to test the concurrent algorithms in the Kotlin Coroutines library and to check a set of student assignments.
-In addition, it was used to find several known and unknown bugs in popular libraries, such as the race between removing and adding an element to the head of the Java's `ConcurrentLinkedDeque`.
+ provides a simple and declarative way to write concurrent tests: instead of describing how to perform the test, the user specifies what to test by declaring all the operations to examine, along with the required correctness property. As a result, a typical concurrent test via *Lincheck* contains only about 15 lines of code and can test all data structures with the same interface, irrelevant of how these data structures are implemented.
+Given the operations and the contract declaration (linearizability is the default one), *Lincheck* (1) generates a set of random concurrent scenarios, (2) examines them using either stress-testing or bounded model checking, and (3) verifies that the results of each invocation satisfy the required correctness property, providing an easy-to-follow trace to reproduce the found error in the model checking mode – this significantly simplifies the bug investigation.
+
+*Lincheck* is successfully integrated into several big projects, such as the standard Kotlin Coroutines library, and identified both new and previously-known bugs in popular concurrency libraries, such as a novel race in Java's classic `ConcurrentLinkedDeque` and a non-trivial set of bugs in recently-proposed NVM data structures. I believe that *Lincheck* can significantly improve both the quality and the productivity of research and development of concurrent algorithms and become the state-of-the-art approach for checking their correctness on the JVM.
+
 
 **Related publications:**
 * [POSTER: Testing Concurrency on the JVM with Lincheck](/publications/#ppopp20-lincheck) @ PPoPP 2020
