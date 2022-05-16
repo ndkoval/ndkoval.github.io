@@ -17,7 +17,13 @@ TODO
 
 ### Fast and scalable buffered channels
 <!-- *Improving data flow processing with new buffered channels in Kotlin Coroutines* -->
-Traditional concurrent programming involves manipulating shared mutable state. Alternatives to this programming style are communicating sequential processes (CSP) and actor models, which share data via explicit communication. These models have been known for almost half a century, and have recently had started to gain significant traction among modern programming languages. The common abstraction for communication between several processes is the *channel*. Although channels are similar to producer-consumer data structures, they have different semantics and support additional operations, such as the `select` expression. Despite their growing popularity, most known implementations of channels use lock-based data structures and can be rather inefficient. Under this project, I am working on efficient and scalable channel algorithms, which are far faster than the already existing ones. New related publications are coming soon.
+Asynchronous programming has gained significant popularity over the last decade: support for this programming pattern is available in many popular languages via libraries and native language implementations, offering implicit synchronization through message passing.
+The key data structure enabling such communication is the *rendezvous channel*.
+Roughly, a rendezvous channel is a blocking queue of size zero, so both `send(e)` and `receive()` operations wait for each other, performing a rendezvous when they meet.
+To optimize the message passing pattern, channels are usually equipped with a fixed-size buffer, so `send(e)`-s do not suspend and put elements into the buffer until its capacity exceeds. This primitive is known as a *buffered channel*.
+
+This project was started to revisit the implementation of both rendezvous and buffered channels, introducing a fast and scalable algorithm for these communication primitives and integrating them into the standard Kotlin Coroutines library.
+Comparing to the old Kotlin implementation, as well as against academic proposals, these new algorithms show a significant performance speedup, by up to 11.5x.
 
 **Related publications:**
 * [POSTER: Memory-Friendly Lock-Free Bounded Queues](/publications/#ppopp20-bounded-queues) @ PPoPP 2020
