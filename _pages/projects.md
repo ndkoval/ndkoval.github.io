@@ -15,7 +15,7 @@ Each project description is equipped with related publications and public talks.
 # Synchronization Primitives for Kotlin Coroutines
 TODO
 
-## Fast and scalable buffered channels
+### Fast and scalable buffered channels
 <!-- *Improving data flow processing with new buffered channels in Kotlin Coroutines* -->
 Traditional concurrent programming involves manipulating shared mutable state. Alternatives to this programming style are communicating sequential processes (CSP) and actor models, which share data via explicit communication. These models have been known for almost half a century, and have recently had started to gain significant traction among modern programming languages. The common abstraction for communication between several processes is the *channel*. Although channels are similar to producer-consumer data structures, they have different semantics and support additional operations, such as the `select` expression. Despite their growing popularity, most known implementations of channels use lock-based data structures and can be rather inefficient. Under this project, I am working on efficient and scalable channel algorithms, which are far faster than the already existing ones. New related publications are coming soon.
 
@@ -28,7 +28,7 @@ Traditional concurrent programming involves manipulating shared mutable state. A
 * [How we created a channel algorithm in Kotlin Coroutines](/talks/#channels-jpoint-2019)
 * [Channels in Kotlin Coroutines](/talks/#channels-joker-2018)
 
-## CQS: a formally-verified framework for fair synchronization
+### CQS: a formally-verified framework for fair synchronization
 This project was started with a novel sempahore algorithm for Kotlin Coroutines (see the [source code](https://github.com/Kotlin/kotlinx.coroutines/blob/master/kotlinx-coroutines-core/common/src/sync/Semaphore.kt)). After that, we decided to create a flexible abstraction for implementing synchronization and communication primitives. The one is called `SegmentQueueSynchronizer` and makes the development of such primitives much faster making them simpler and more efficient at the same time. Since we also support abortability of waiting requests (e.g., `lock` operation can be aborted by timeout) and these algorithm parts are usually the most complicated and error-prone ones, we decided to prove everything formally in the Iris framework for Coq. Now we are completing the proofs and working on experiments, and looking forward to a new paper soon!
 
 **Related publications:**
@@ -36,6 +36,8 @@ This project was started with a novel sempahore algorithm for Kotlin Coroutines 
 
 **Related talks:**
 * [Synchronization primitives can be faster with SegmentQueueSynchronizer](/talks/#hydra-2020-sqs)
+
+<hr/>
 
 # Concurrent Graph Algorithms
 Parallel graph processing is a fundamental and well-studied topic in academia in both theoretical and practical aspects. However, some applications, such as social networks analysis and compilers, require these algorithms to be online, thus, concurrent. This project aims to build practically efficient concurrent algorithms for different aspects of graph processing, including using multi-queues as priority schedulers for some of the algorithms or online dynamic connectivity problems under edge insertion and deletions. Nowadays, most hardware platforms have several NUMA sockets, so it is essential to make all these algorithms NUMA-friendly.
@@ -48,10 +50,11 @@ Parallel graph processing is a fundamental and well-studied topic in academia in
 **Related talks:**
 * [Multi-Queues Can Be State-of-the-Art Priority Schedulers](/talks/#ppopp-smq)
 
+<hr/>
 
 # Testing Concurrency on the JVM
 
-## Lincheck: a framework for testing concurrent data structures
+### Lincheck: a framework for testing concurrent data structures
 <https://github.com/Kotlin/kotlinx-lincheck>
 
 *Lincheck* is a practical tool for testing concurrent algorithms implemented in JVM-based languages, such as Java, Kotlin, or Scala. Roughly, *lincheck* takes the list of operations on the  data structure to be tested, generates a series of concurrent scenarios, executes them in either stress testing or model checking mode, and checks whether there exists some sequential execution which can explain the results.
@@ -66,7 +69,7 @@ In addition, it was used to find several known and unknown bugs in popular libra
 * [Lincheck: testing concurrent data structures on Java](#lincheck-hydra-2019)
 * [Lock-free algorithms testing](/talks/#lock_free_algorithms_testing)
 
-## Dl-Check: a tool for finding potential deadlocks<a id="dl-check"/>
+### Dl-Check: a tool for finding potential deadlocks<a id="dl-check"/>
 <https://github.com/Devexperts/dlcheck>
 
 *Dl-Check* determines potential deadlock as a lock hierarchy violation and finds them via dynamic analysis in Java programs. This tool is implemented as Java agent and injects analysis code within class transformation during class loading, therefore it’s possible to use *Dl-Check* without any code change. The base algorithm for finding lock hierarchy violations is based on new cycles detection in the lock-order graph. For this purpose, an algorithm for incremental topological order maintenance is used.
@@ -77,7 +80,7 @@ In addition, it was used to find several known and unknown bugs in popular libra
 - **Related talks:**
 * [How to find deadlock not getting into it](/talks/#dl_check)
 
-## Time-Test: a library for testing time-based functionality<a id="time-test"/>
+### Time-Test: a library for testing time-based functionality<a id="time-test"/>
 <https://github.com/Devexperts/time-test>
 
 *Time-test* helps to test time-dependent functionality via time virtualization. It is implemented as a Java agent and replaces all time-dependent methods invocations with its own implementations on the fly. Unlike other implementations, it works not with `System.currentTimeMillis()` and `System.nanoTime()` methods only, but with `Object.wait(..)`, `Thread.sleep(..)`, and `Unsafe.park(..)` as well. In addition, *time-test* has a special `waitUntilThreadsAreFrozen(timeout)` method which waits until all threads have done their work.
