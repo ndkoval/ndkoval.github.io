@@ -31,7 +31,10 @@ Traditional concurrent programming involves manipulating shared mutable state. A
 <br/>
 
 ### CQS: a formally-verified framework for fair synchronization
-This project was started with a novel sempahore algorithm for Kotlin Coroutines (see the [source code](https://github.com/Kotlin/kotlinx.coroutines/blob/master/kotlinx-coroutines-core/common/src/sync/Semaphore.kt)). After that, we decided to create a flexible abstraction for implementing synchronization and communication primitives. The one is called `SegmentQueueSynchronizer` and makes the development of such primitives much faster making them simpler and more efficient at the same time. Since we also support abortability of waiting requests (e.g., `lock` operation can be aborted by timeout) and these algorithm parts are usually the most complicated and error-prone ones, we decided to prove everything formally in the Iris framework for Coq. Now we are completing the proofs and working on experiments, and looking forward to a new paper soon!
+This project introduces a new framework for building synchronization primitives called the *CancellableQueueSynchronizer* (CQS). It enables efficient fair and abortable implementations of fundamental synchronization constructs such as mutexes, semaphores, barriers, count-down-latches, and blocking pools.
+The first contribution is algorithmic, as implementing both fairness and abortability efficiently at this level of generality is  non-trivial.
+Importantly, all the resulting algorithms come with *formal proofs* in the Iris framework for Coq. These proofs are modular, so it is easy to prove correctness for new primitives implemented on top of CQS. Some of the primitives are going to be a part of the standard Kotlin Coroutines library, as well the CQS framework itself. Compared against Java's \texttt{AbstractQueuedSynchronizer}, the only practical abstraction to provide similar semantics,
+CQS shows significant improvements across all benchmarks, of up to two orders of magnitude.
 
 **Related publications:**
 * [A Formally-Verified Framework for Fair Synchronization in Kotlin Coroutines](https://arxiv.org/abs/2111.12682) @ Preprint on arXiv
