@@ -73,7 +73,7 @@ In addition, it was used to find several known and unknown bugs in popular libra
 ### Dl-Check: a tool for finding potential deadlocks<a id="dl-check"/>
 <https://github.com/Devexperts/dlcheck>
 
-*Dl-Check* determines potential deadlock as a lock hierarchy violation and finds them via dynamic analysis in Java programs. This tool is implemented as Java agent and injects analysis code within class transformation during class loading, therefore it’s possible to use *Dl-Check* without any code change. The base algorithm for finding lock hierarchy violations is based on new cycles detection in the lock-order graph. For this purpose, an algorithm for incremental topological order maintenance is used.
+*Dl-Check* determines potential deadlock as a lock hierarchy violation and finds them via dynamic analysis in Java programs. This tool is implemented as a Java agent and injects analysis code within class transformation during class loading, making it possible to use *Dl-Check* without code changes. The base algorithm for finding lock hierarchy violations is based on cycle detection in the lock-order graph's cycle, leveraging incremental topological order maintenance for that.
 
 **Related publications:**
 * [Dl-Check: dynamic potential deadlock detection tool for Java programs](/publications/#dl_check_17) @ TMPA 2017
@@ -83,10 +83,10 @@ In addition, it was used to find several known and unknown bugs in popular libra
 
 <br/>
 
-### Time-Test: a library for testing time-based functionality<a id="time-test"/>
+### Time-test: a library for testing time-based functionality<a id="time-test"/>
 <https://github.com/Devexperts/time-test>
 
-*Time-test* helps to test time-dependent functionality via time virtualization. It is implemented as a Java agent and replaces all time-dependent methods invocations with its own implementations on the fly. Unlike other implementations, it works not with `System.currentTimeMillis()` and `System.nanoTime()` methods only, but with `Object.wait(..)`, `Thread.sleep(..)`, and `Unsafe.park(..)` as well. In addition, *time-test* has a special `waitUntilThreadsAreFrozen(timeout)` method which waits until all threads have done their work.
+The *time-test* library helps to test time-dependent functionality via time virtualization. It is implemented as a Java agent and replaces all time-dependent method invocations with its implementations on the fly. Unlike other implementations, it works not with `System.currentTimeMillis()` and `System.nanoTime()` methods only, but with `Object.wait(..)`, `Thread.sleep(..)`, and `Unsafe.park(..)` as well. In addition, *time-test* has a special `waitUntilThreadsAreFrozen(timeout)` method, which waits until all threads have done their work.
 
 **Related blog posts:**
 * [Time machine for Java](/blog/time-machine-for-java)
@@ -95,8 +95,4 @@ In addition, it was used to find several known and unknown bugs in popular libra
 ## Usages: a tool for finding code usages in Maven repositories <a id="usages"/>
 <https://github.com/Devexperts/usages>
 
-*Usages* tool finds code usages in the specified Maven repositories. It indexes repositories, downloads required artifacts, and scans `.class` files in them. The tool analyzes all kinds of dependencies: usages of fields and methods, extensions of classes and implementations of interfaces, usages of annotations, overrides of methods, and so on. The tool is separated into 2 parts: server application, which collects all information and analyzes classes, and a client one, which is implemented as an IntelliJ IDEA plugin.
-
-<!-- ## JAgent  <a id="jagent"/>
-*Framework for simplifying java agents development*\\
-<https://github.com/Devexperts/jagent> -->
+*Usages* tool finds code usages in the specified Maven repositories. It indexes the specified repositories, downloading all artifacts and scanning `.class` files in them. The tool analyzes all kinds of dependencies: usages of fields and methods, extensions of classes and interface implementations, method overrides, and many others. The *Usages* tool is separated into two parts: a server application, which collects all information and analyzes JVM classes, and a client implemented as an IntelliJ IDEA plugin.
