@@ -77,7 +77,7 @@ In addition, it was used to find several known and unknown bugs in popular libra
 **Related publications:**
 * [Dl-Check: dynamic potential deadlock detection tool for Java programs](/publications/#dl_check_17) @ TMPA 2017
 
-- **Related talks:**
+**Related talks:**
 * [How to find deadlock not getting into it](/talks/#dl_check)
 
 ### Time-Test: a library for testing time-based functionality<a id="time-test"/>
