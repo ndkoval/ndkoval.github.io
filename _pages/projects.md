@@ -85,6 +85,8 @@ In addition, it was used to find several known and unknown bugs in popular libra
 **Related blog posts:**
 * [Time machine for Java](/blog/time-machine-for-java)
 
+<hr/>
+
 # Usages: a tool for finding code usages in Maven repositories <a id="usages"/>
 <https://github.com/Devexperts/usages>
 
