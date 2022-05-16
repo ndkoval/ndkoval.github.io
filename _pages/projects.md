@@ -5,7 +5,7 @@ classes: wide
 permalink: /projects/
 author_profile: true
 comments: true
-toc: false
+toc: true
 toc_label: Projects
 ---
 
