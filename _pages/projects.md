@@ -52,6 +52,8 @@ Parallel graph processing is a fundamental and well-studied topic in academia in
 
 
 ## Testing Concurrency on the JVM
+When developing new concurrent algorithms and solutions in general,
+it is crucial to test them properly. The tools below help with that on the JVM.
 
 ### Lincheck: a framework for testing concurrent data structures
 <https://github.com/Kotlin/kotlinx-lincheck>
