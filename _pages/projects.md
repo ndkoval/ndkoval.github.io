@@ -28,7 +28,7 @@ Traditional concurrent programming involves manipulating shared mutable state. A
 * [How we created a channel algorithm in Kotlin Coroutines](/talks/#channels-jpoint-2019)
 * [Channels in Kotlin Coroutines](/talks/#channels-joker-2018)
 
-<hr style="width:50%"/>
+<hr style="width:50%;margin:auto"/>
 
 ### CQS: a formally-verified framework for fair synchronization
 This project was started with a novel sempahore algorithm for Kotlin Coroutines (see the [source code](https://github.com/Kotlin/kotlinx.coroutines/blob/master/kotlinx-coroutines-core/common/src/sync/Semaphore.kt)). After that, we decided to create a flexible abstraction for implementing synchronization and communication primitives. The one is called `SegmentQueueSynchronizer` and makes the development of such primitives much faster making them simpler and more efficient at the same time. Since we also support abortability of waiting requests (e.g., `lock` operation can be aborted by timeout) and these algorithm parts are usually the most complicated and error-prone ones, we decided to prove everything formally in the Iris framework for Coq. Now we are completing the proofs and working on experiments, and looking forward to a new paper soon!
@@ -38,8 +38,6 @@ This project was started with a novel sempahore algorithm for Kotlin Coroutines 
 
 **Related talks:**
 * [Synchronization primitives can be faster with SegmentQueueSynchronizer](/talks/#hydra-2020-sqs)
-
-<hr/>
 
 ## Concurrent Graph Algorithms
 Parallel graph processing is a fundamental and well-studied topic in academia in both theoretical and practical aspects. However, some applications, such as social networks analysis and compilers, require these algorithms to be online, thus, concurrent. This project aims to build practically efficient concurrent algorithms for different aspects of graph processing, including using multi-queues as priority schedulers for some of the algorithms or online dynamic connectivity problems under edge insertion and deletions. Nowadays, most hardware platforms have several NUMA sockets, so it is essential to make all these algorithms NUMA-friendly.
@@ -70,7 +68,7 @@ In addition, it was used to find several known and unknown bugs in popular libra
 * [Lincheck: testing concurrent data structures on Java](#lincheck-hydra-2019)
 * [Lock-free algorithms testing](/talks/#lock_free_algorithms_testing)
 
-<hr style="width:50%"/>
+<hr style="width:50%;margin:auto"/>
 
 ### Dl-Check: a tool for finding potential deadlocks<a id="dl-check"/>
 <https://github.com/Devexperts/dlcheck>
@@ -83,7 +81,7 @@ In addition, it was used to find several known and unknown bugs in popular libra
 **Related talks:**
 * [How to find deadlock not getting into it](/talks/#dl_check)
 
-<hr style="width:50%"/>
+<hr style="width:50%;margin:auto"/>
 
 ### Time-Test: a library for testing time-based functionality<a id="time-test"/>
 <https://github.com/Devexperts/time-test>
