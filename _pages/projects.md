@@ -74,7 +74,7 @@ In addition, it was used to find several known and unknown bugs in popular libra
 **Related publications:**
 * [Dl-Check: dynamic potential deadlock detection tool for Java programs](/publications/#dl_check_17) @ TMPA 2017
 
-**Related talks:**
+- **Related talks:**
 * [How to find deadlock not getting into it](/talks/#dl_check)
 
 ## Time-Test: a library for testing time-based functionality<a id="time-test"/>
@@ -82,7 +82,7 @@ In addition, it was used to find several known and unknown bugs in popular libra
 
 *Time-test* helps to test time-dependent functionality via time virtualization. It is implemented as a Java agent and replaces all time-dependent methods invocations with its own implementations on the fly. Unlike other implementations, it works not with `System.currentTimeMillis()` and `System.nanoTime()` methods only, but with `Object.wait(..)`, `Thread.sleep(..)`, and `Unsafe.park(..)` as well. In addition, *time-test* has a special `waitUntilThreadsAreFrozen(timeout)` method which waits until all threads have done their work.
 
-**Related blog posts**
+**Related blog posts:**
 * [Time machine for Java](/blog/time-machine-for-java)
 
 # Usages: a tool for finding code usages in Maven repositories <a id="usages"/>
