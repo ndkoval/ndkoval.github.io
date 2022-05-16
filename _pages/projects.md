@@ -12,9 +12,9 @@ toc_label: List of projects
 This page describes the projects where I have a key role, omitting the small ones.
 Each project description is equipped with related publications and public talks.
 
-## Synchronization Primitives for Kotlin coroutines
+## Synchronization Primitives for Kotlin Coroutines
 
-### Fast and Scalable Buffered Channels
+### Fast and scalable buffered channels
 *Improving data flow processing with new buffered channels in Kotlin Coroutines*
 
 Traditional concurrent programming involves manipulating shared mutable state. Alternatives to this programming style are communicating sequential processes (CSP) and actor models, which share data via explicit communication. These models have been known for almost half a century, and have recently had started to gain significant traction among modern programming languages. The common abstraction for communication between several processes is the *channel*. Although channels are similar to producer-consumer data structures, they have different semantics and support additional operations, such as the `select` expression. Despite their growing popularity, most known implementations of channels use lock-based data structures and can be rather inefficient. Under this project, I am working on efficient and scalable channel algorithms, which are far faster than the already existing ones. New related publications are coming soon.
@@ -27,9 +27,7 @@ Traditional concurrent programming involves manipulating shared mutable state. A
 * [How we created a channel algorithm in Kotlin Coroutines](/talks/#channels-jpoint-2019)
 * [Channels in Kotlin Coroutines](/talks/#channels-joker-2018)
 
-### *CancellableQueueSynchronizer*: A Framework for Building Synchronization primitives
-*Abstraction for fair synchronization and communication primitives*
-
+### *CancellableQueueSynchronizer*: a framework for building fair and abortable synchronization primitives
 This project was started with a novel sempahore algorithm for Kotlin Coroutines (see the [source code](https://github.com/Kotlin/kotlinx.coroutines/blob/master/kotlinx-coroutines-core/common/src/sync/Semaphore.kt)). After that, we decided to create a flexible abstraction for implementing synchronization and communication primitives. The one is called `SegmentQueueSynchronizer` and makes the development of such primitives much faster making them simpler and more efficient at the same time. Since we also support abortability of waiting requests (e.g., `lock` operation can be aborted by timeout) and these algorithm parts are usually the most complicated and error-prone ones, we decided to prove everything formally in the Iris framework for Coq. Now we are completing the proofs and working on experiments, and looking forward to a new paper soon!
 
 
