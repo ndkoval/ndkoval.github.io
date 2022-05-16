@@ -37,7 +37,7 @@ with Vitaly Aksenov. *PPoPP 2020*.
 **In Search of the Fastest Concurrent Union-Find Algorithm [\[PDF\]](/publications/opodis19-dsu.pdf) <span style="color: red">Best Paper</span>** <a id="opodis19-union-find"/>\\
 with Alexander Fedorov and Dan Alistarh. *OPODIS 2019*.
 
-**Efficiency Guarantees for Parallel Incremental Algorithms under Relaxed Schedulers [\[PDF\]](/publications/spaa19-relaxed-schedulers.pdf)**\\
+**Efficiency Guarantees for Parallel Incremental Algorithms under Relaxed Schedulers [\[PDF\]](/publications/spaa19-relaxed-schedulers.pdf)** <a id="spaa19-mq"/>\\
 with Dan Alistarh and Giorgi Nadiradze. *SPAA 2019*.
 
 **Scalable FIFO Channels for Programming via Communicating Sequential Processes [\[PDF\]](/publications/europar19-channels.pdf)** <a id="europar19-channels"/>\\

@@ -55,6 +55,7 @@ Parallel graph processing is a fundamental and well-studied topic in academia in
 * [Multi-queues can be state-of-the-art priority schedulers](/publications/#ppopp22-smq) @ PPoPP 2022
 * [A Scalable Concurrent Algorithm for Dynamic Connectivity](/publications/#spaa21-dynamic-connectivity) @ SPAA 2021
 * [In Search of the Fastest Concurrent Union-Find Algorithm](/publications/#opodis19-union-find) @ OPODIS 2019
+* [Efficiency Guarantees for Parallel Incremental Algorithms under Relaxed Schedulers](/publications/#spaa19-mq) @ SPAA 2019
 
 **Related talks:**
 * [Multi-Queues Can Be State-of-the-Art Priority Schedulers](/talks/#ppopp-smq)
