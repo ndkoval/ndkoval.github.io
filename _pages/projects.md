@@ -13,7 +13,7 @@ This page describes the projects where I have a key role, also omitting the smal
 Each project description is equipped with related publications and public talks.
 
 ## Synchronization Primitives for Kotlin Coroutines
-TODO
+One of the most significant and inspiring projects I have been working on is a new synchronization and communication primitives for Kotlin Coroutines. In short, the project consists of two parts: (1) fast and scalable channels for enabling efficient communication between coroutines and (2) a set of synchronization fair primitives with efficient abortability support.
 
 ### Fast and scalable buffered channels
 <!-- *Improving data flow processing with new buffered channels in Kotlin Coroutines* -->
