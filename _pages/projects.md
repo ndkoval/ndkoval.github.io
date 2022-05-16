@@ -31,9 +31,9 @@ Traditional concurrent programming involves manipulating shared mutable state. A
 <br/>
 
 ### CQS: a formally-verified framework for fair synchronization
-This project introduces a new framework for building synchronization primitives called the *CancellableQueueSynchronizer* (CQS). It enables efficient fair and abortable implementations of fundamental synchronization constructs such as mutexes, semaphores, barriers, count-down-latches, and blocking pools.
+This project introduces a new framework for building synchronization primitives called the `CancellableQueueSynchronizer` (CQS). It enables efficient fair and abortable implementations of fundamental synchronization constructs such as mutexes, semaphores, barriers, count-down-latches, and blocking pools.
 The first contribution is algorithmic, as implementing both fairness and abortability efficiently at this level of generality is  non-trivial.
-Importantly, all the resulting algorithms come with *formal proofs* in the Iris framework for Coq. These proofs are modular, so it is easy to prove correctness for new primitives implemented on top of CQS. Some of the primitives are going to be a part of the standard Kotlin Coroutines library, as well the CQS framework itself. Compared against Java's \texttt{AbstractQueuedSynchronizer}, the only practical abstraction to provide similar semantics,
+Importantly, all the resulting algorithms come with *formal proofs* in the Iris framework for Coq. These proofs are modular, so it is easy to prove correctness for new primitives implemented on top of CQS. Some of the primitives are going to be a part of the standard Kotlin Coroutines library, as well the CQS framework itself. Compared against Java's `AbstractQueuedSynchronizer`, the only practical abstraction to provide similar semantics,
 CQS shows significant improvements across all benchmarks, of up to two orders of magnitude.
 
 **Related publications:**
