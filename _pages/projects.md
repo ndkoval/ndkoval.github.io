@@ -78,7 +78,7 @@ Given the operations and the contract declaration (linearizability is the defaul
 
 **Related talks:**
 * [Testing concurrent algorithms with Lincheck](/talks/#lincheck-joker-2019)
-* [Lincheck: testing concurrent data structures on Java](#lincheck-hydra-2019)
+* [Lincheck: testing concurrent data structures on Java](/talks/#lincheck-hydra-2019)
 * [Lock-free algorithms testing](/talks/#lock_free_algorithms_testing)
 
 <br/>
