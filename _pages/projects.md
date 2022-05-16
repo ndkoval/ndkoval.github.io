@@ -9,7 +9,7 @@ toc: true
 toc_label: List of projects
 ---
 
-This page describes the projects where I have a key role, omitting the small ones.
+This page describes the projects where I have a key role, also omitting the small ones.
 Each project description is equipped with related publications and public talks.
 
 ## Synchronization Primitives for Kotlin Coroutines
@@ -28,8 +28,14 @@ Traditional concurrent programming involves manipulating shared mutable state. A
 * [How we created a channel algorithm in Kotlin Coroutines](/talks/#channels-jpoint-2019)
 * [Channels in Kotlin Coroutines](/talks/#channels-joker-2018)
 
-### *CancellableQueueSynchronizer*: a framework for building fair and abortable synchronization primitives
+### CQS: a formally-verified framework for fair synchronization
 This project was started with a novel sempahore algorithm for Kotlin Coroutines (see the [source code](https://github.com/Kotlin/kotlinx.coroutines/blob/master/kotlinx-coroutines-core/common/src/sync/Semaphore.kt)). After that, we decided to create a flexible abstraction for implementing synchronization and communication primitives. The one is called `SegmentQueueSynchronizer` and makes the development of such primitives much faster making them simpler and more efficient at the same time. Since we also support abortability of waiting requests (e.g., `lock` operation can be aborted by timeout) and these algorithm parts are usually the most complicated and error-prone ones, we decided to prove everything formally in the Iris framework for Coq. Now we are completing the proofs and working on experiments, and looking forward to a new paper soon!
+
+**Related publications:**
+* [A Formally-Verified Framework for Fair Synchronization in Kotlin Coroutines](https://arxiv.org/abs/2111.12682) @ Preprint on arXiv
+
+**Related talks:**
+* [Synchronization primitives can be faster with SegmentQueueSynchronizer](/talks/#hydra-2020-sqs)
 
 ## Concurrent Graph Algorithms
 Parallel graph processing is a fundamental and well-studied topic in academia in both theoretical and practical aspects. However, some applications, such as social networks analysis and compilers, require these algorithms to be online, thus, concurrent. This project aims to build practically efficient concurrent algorithms for different aspects of graph processing, including using multi-queues as priority schedulers for some of the algorithms or online dynamic connectivity problems under edge insertion and deletions. Nowadays, most hardware platforms have several NUMA sockets, so it is essential to make all these algorithms NUMA-friendly.
@@ -55,13 +61,10 @@ In addition, it was used to find several known and unknown bugs in popular libra
 **Related publications:**
 * [POSTER: Testing Concurrency on the JVM with Lincheck](/publications/#ppopp20-lincheck) @ PPoPP 2020
 
-**Related talks (by me):**
+**Related talks:**
 * [Testing concurrent algorithms with Lincheck](/talks/#lincheck-joker-2019)
 * [Lincheck: testing concurrent data structures on Java](#lincheck-hydra-2019)
 * [Lock-free algorithms testing](/talks/#lock_free_algorithms_testing)
-
-**Related talks (by my colleagues):**
-
 
 ### Dl-Check: a tool for finding potential deadlocks<a id="dl-check"/>
 <https://github.com/Devexperts/dlcheck>
@@ -79,8 +82,8 @@ In addition, it was used to find several known and unknown bugs in popular libra
 
 *Time-test* helps to test time-dependent functionality via time virtualization. It is implemented as a Java agent and replaces all time-dependent methods invocations with its own implementations on the fly. Unlike other implementations, it works not with `System.currentTimeMillis()` and `System.nanoTime()` methods only, but with `Object.wait(..)`, `Thread.sleep(..)`, and `Unsafe.park(..)` as well. In addition, *time-test* has a special `waitUntilThreadsAreFrozen(timeout)` method which waits until all threads have done their work.
 
-**Related posts**
-* [Time machine for Java](http://nkoval.info/blog/time-machine-for-java)
+**Related blog posts**
+* [Time machine for Java](/blog/time-machine-for-java)
 
 ## Usages: A Tool For Finding Code Usages in Maven Repositories <a id="usages"/>
 <https://github.com/Devexperts/usages>
