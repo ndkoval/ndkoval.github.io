@@ -86,7 +86,7 @@ Writing multithreaded programs is hard, however, testing them is not easier at a
 # Other
 These talks are related to either relatively small projects or simply cannot be assigned to any one. However, they are also important for me.
 
-## Multi-Queues Can Be State-of-the-Art Priority Schedulers
+## Multi-Queues Can Be State-of-the-Art Priority Schedulers <a id="ppopp-smq"/>
 
 :gb: PPoPP 2022\\
 :gb: [Slides](/presentations/ppopp_2022_smq.pdf)

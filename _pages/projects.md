@@ -13,13 +13,14 @@ This page describes the projects where I have a key role, omitting the small one
 Each project description is equipped with related publications and public talks.
 
 ## Synchronization Primitives for Kotlin Coroutines
+TODO
 
 ### Fast and scalable buffered channels
-*Improving data flow processing with new buffered channels in Kotlin Coroutines*
-
+<!-- *Improving data flow processing with new buffered channels in Kotlin Coroutines* -->
 Traditional concurrent programming involves manipulating shared mutable state. Alternatives to this programming style are communicating sequential processes (CSP) and actor models, which share data via explicit communication. These models have been known for almost half a century, and have recently had started to gain significant traction among modern programming languages. The common abstraction for communication between several processes is the *channel*. Although channels are similar to producer-consumer data structures, they have different semantics and support additional operations, such as the `select` expression. Despite their growing popularity, most known implementations of channels use lock-based data structures and can be rather inefficient. Under this project, I am working on efficient and scalable channel algorithms, which are far faster than the already existing ones. New related publications are coming soon.
 
 **Related publications:**
+* [POSTER: Memory-Friendly Lock-Free Bounded Queues](/publications/#ppopp20-bounded-queues) @ PPoPP 2020
 * [Scalable FIFO Channels for Programming via Communicating Sequential Processes](/publications/#europar19-channels) @ Euro-Par 2019
 * [POSTER: Lock-free channels for programming via communicating sequential processes](/publications/#ppopp19-channels) @ PPoPP 2019
 
@@ -29,6 +30,17 @@ Traditional concurrent programming involves manipulating shared mutable state. A
 
 ### *CancellableQueueSynchronizer*: a framework for building fair and abortable synchronization primitives
 This project was started with a novel sempahore algorithm for Kotlin Coroutines (see the [source code](https://github.com/Kotlin/kotlinx.coroutines/blob/master/kotlinx-coroutines-core/common/src/sync/Semaphore.kt)). After that, we decided to create a flexible abstraction for implementing synchronization and communication primitives. The one is called `SegmentQueueSynchronizer` and makes the development of such primitives much faster making them simpler and more efficient at the same time. Since we also support abortability of waiting requests (e.g., `lock` operation can be aborted by timeout) and these algorithm parts are usually the most complicated and error-prone ones, we decided to prove everything formally in the Iris framework for Coq. Now we are completing the proofs and working on experiments, and looking forward to a new paper soon!
+
+## Concurrent Graph Algorithms
+Parallel graph processing is a fundamental and well-studied topic in academia in both theoretical and practical aspects. However, some applications, such as social networks analysis and compilers, require these algorithms to be online, thus, concurrent. This project aims to build practically efficient concurrent algorithms for different aspects of graph processing, including using multi-queues as priority schedulers for some of the algorithms or online dynamic connectivity problems under edge insertion and deletions. Nowadays, most hardware platforms have several NUMA sockets, so it is essential to make all these algorithms NUMA-friendly.
+
+**Related publications:**
+* [Multi-queues can be state-of-the-art priority schedulers](/publications/#ppopp22-smq) @ PPoPP 2022
+* [A Scalable Concurrent Algorithm for Dynamic Connectivity](/publications/#spaa21-dynamic-connectivity) @ SPAA 2021
+* [In Search of the Fastest Concurrent Union-Find Algorithm](/publications/#opodis19-union-find) @ OPODIS 2019
+
+**Related talks:**
+* [Multi-Queues Can Be State-of-the-Art Priority Schedulers](/talks/#ppopp-smq)
 
 
 ## Testing Concurrency on the JVM
