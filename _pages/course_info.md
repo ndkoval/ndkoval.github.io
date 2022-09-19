@@ -2,7 +2,7 @@
 title:  "Parallel Programming Course @ JUB, Fall 2022"
 layout: single
 classes: wide
-permalink: /mpp_jub_fall_2022/
+permalink: /mpp-jub-fall-2022/
 author_profile: false
 comments: false
 toc: false
