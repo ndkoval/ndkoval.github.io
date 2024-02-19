@@ -63,7 +63,7 @@ defaults:
       related: true
       permalink: '/blog/:title'
 
-timezone: Europe/Moscow
+timezone: Europe/Amsterdam
 
 #comments:
 #  provider               : "facebook"
