@@ -77,11 +77,11 @@ twitter:
 author:
   name   : "Nikita Koval"
   avatar : "/assets/images/bio-photo.jpg"
-  location: "Amsterdam, Netherlands"
-  bio    : "Researcher in CS"
+  location: "Amsterdam, The Netherlands"
+  bio    : "Research Engineer in CS"
   linkedin: ndkoval
   twitter: nkoval_
-  email  : ndkoval@ya.ru
+  email  : parusnikita@gmail.com
 
 include: ["_pages"]
 

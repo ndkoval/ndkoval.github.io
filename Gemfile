@@ -11,7 +11,7 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "jekyll-redirect-from"
 gem "jekyll-remote-theme"
-gem "github-pages", "~> 226", group: :jekyll_plugins
+gem "github-pages"
 gem 'jekyll-include-cache'
 
 
@@ -35,3 +35,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jekyll-archives'
 gem "minimal-mistakes-jekyll"
 gem "jemoji"
+
+gem "webrick"
+
+# see https://stackoverflow.com/questions/75088199/require-cannot-load-such-file-rack-handler-loaderror
+gem 'rackup'
