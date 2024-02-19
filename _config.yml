@@ -23,10 +23,11 @@ twitter_username: nkoval_
 repository: "ndkoval/ndkoval.github.io"
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
   - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
