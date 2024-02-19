@@ -23,6 +23,7 @@ twitter_username: nkoval_
 repository: "ndkoval/ndkoval.github.io"
 # Build settings
 markdown: kramdown
+# UNCOMMENT ME FOR LOCAL BUILD!
 # theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
