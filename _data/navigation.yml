@@ -1,9 +1,11 @@
 main:
+  - title: "Main page"
+    url: /
   - title: "Publications"
     url: /publications/
-  - title: "Projects"
-    url: /projects/
   - title: "Talks"
     url: /talks/
+  - title: "<u><b>Workshop on Concurrent Algorithms</b></u>"
+    url: /workshop/
  # - title: "Blog"
  #   url: /blog/

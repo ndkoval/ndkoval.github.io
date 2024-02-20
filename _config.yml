@@ -24,7 +24,7 @@ repository: "ndkoval/ndkoval.github.io"
 # Build settings
 markdown: kramdown
 # UNCOMMENT ME FOR LOCAL BUILD!
-# theme: minimal-mistakes-jekyll
+theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
@@ -35,8 +35,10 @@ plugins:
   - jekyll-include-cache
   - jemoji
 
-minimal_mistakes_skin: "contrast"
-search                   : false
+minimal_mistakes_skin: "air"
+search: false
+atom_feed:
+  hide: true
 
 #Archive settings
 # category_archive:
