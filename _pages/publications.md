@@ -9,7 +9,7 @@ toc: false
 toc_label: Publications
 ---
 
-Please see [Google Scholar](https://scholar.google.com/citations?user=6ehffhoAAAAJ&hl=en) or [dblp](https://dblp.org/pid/235/2563.html) for the most recent list of publications.
+Please see [Google Scholar](https://scholar.google.com/citations?user=6ehffhoAAAAJ&hl=en) or [DBLP](https://dblp.org/pid/235/2563.html) for the most recent list of publications.
 
 ## 2024
 
