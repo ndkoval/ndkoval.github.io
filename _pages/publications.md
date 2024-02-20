@@ -9,7 +9,26 @@ toc: false
 toc_label: Publications
 ---
 
-The publications are grouped by year. You can also find my profile on [Google Scholar](https://scholar.google.com/citations?user=6ehffhoAAAAJ&hl=en) and [dblp](https://dblp.org/pid/235/2563.html).
+Please see [Google Scholar](https://scholar.google.com/citations?user=6ehffhoAAAAJ&hl=en) or [dblp](https://dblp.org/pid/235/2563.html) for the most recent list of publications.
+
+## 2024
+
+**Memory Bounds for Concurrent Bounded Queues [\[PDF\]](/publications/ppopp24-bounded-queues.pdf)** <a id="ppopp24-bounded-queues"/>\\
+with Vitaly Aksenov, Petr Kuznetsov, and Anton Paramonov. *PPoPP 2024*.
+
+## 2023
+
+**Lincheck: A Practical Framework for Testing Concurrent Data Structures on JVM [\[PDF\]](/publications/cav23-lincheck.pdf)** <a id="cav23-lincheck"/>\\
+with Alexander Fedorov, Maria Sokolova, Dmitry Tsitelov, and Dan Alistarh. *CAV 2023*.
+
+**CQS: A Formally-Verified Framework for Fair and Abortable Synchronization [\[PDF\]](/publications/pldi23-cqs.pdf)** <a id="pldi23-cqs"/>\\
+with Dmitry Khalanskiy and Dan Alistarh. *PLDI 2023*.
+
+**Fast and Scalable Channels in Kotlin Coroutines [\[PDF\]](/publications/ppopp23-channels.pdf)** <a id="ppopp23-channels"/>\\
+with Dan Alistarh and Roman Elizarov. *PPoPP 2023*.
+
+**The State-of-the-Art LCRQ Concurrent Queue Algorithm Does NOT Require CAS2 [\[PDF\]](/publications/ppopp23-lprq.pdf)** <a id="ppopp23-lprq"/>\\
+with Raed Romanov. *PPoPP 2023*.
 
 
 ## 2022
@@ -45,10 +64,3 @@ with Dan Alistarh and Roman Elizarov. *Euro-Par 2019*.
 
 **POSTER: Lock-free channels for programming via communicating sequential processes [\[PDF\]](/publications/ppopp19-channels.pdf)** <a id="ppopp19-channels"/>\\
 with Dan Alistarh and Roman Elizarov. *PPoPP 2019*.
-
-
-## 2017
-
-<a id="dl_check_17"/>
-**Dl-Check: dynamic potential deadlock detection tool for Java programs [\[PDF\]](/publications/tmpa17-dlcheck.pdf)**\\
-with Dmitry Tsitelov and Roman Elizarov. *TMPA 2017*.
