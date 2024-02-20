@@ -14,7 +14,7 @@ Please see [DBLP](https://dblp.org/pid/235/2563.html) or [Google Scholar](https:
 ## 2024
 
 **Memory Bounds for Concurrent Bounded Queues [\[PDF\]](/publications/ppopp24-bounded-queues.pdf)** <a id="ppopp24-bounded-queues"/>\\
-with Vitaly Aksenov, Petr Kuznetsov, and Anton Paramonov. *PPoPP 2024*.
+Vitaly Aksenov, Nikita Koval, Petr Kuznetsov, Anton Paramonov. *PPoPP 2024*.
 
 ## 2023
 
