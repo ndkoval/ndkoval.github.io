@@ -33,7 +33,7 @@ with Raed Romanov. *PPoPP 2023*.
 
 ## 2022
 
-**Multi-queues can be state-of-the-art priority schedulers [\[PDF\]](/publications/ppopp22-smq.pdf)** <a id="ppopp22-smq"/>\\
+**Multi-Queues Can Be State-of-the-Art Priority Schedulers [\[PDF\]](/publications/ppopp22-smq.pdf)** <a id="ppopp22-smq"/>\\
 with Anastasiia Postnikova, Giorgi Nadiradze, and Dan Alistarh. *PPoPP 2022*.
 
 ## 2021
