@@ -36,7 +36,7 @@ plugins:
   - jemoji
 
 minimal_mistakes_skin: "contrast"
-search                   : true
+search                   : false
 
 #Archive settings
 category_archive:
