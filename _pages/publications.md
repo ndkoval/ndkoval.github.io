@@ -13,6 +13,12 @@ Please see [DBLP](https://dblp.org/pid/235/2563.html) or [Google Scholar](https:
 
 ## 2024
 
+**Understanding Concurrency Bugs in Real-World Programs with Kotlin Coroutines [\[PDF\]](/publications/ecoop24-concurrency-bugs.pdf)** <a id="ecoop24-concurrency-bugs"/>\\
+Bob Brockbernd, Nikita Koval, Arie van Deursen, Burcu Kulahcioglu Ozkan. *ECOOP 2024*.
+
+**Testing Concurrent Algorithms on JVM with Lincheck and IntelliJ IDEA [\[PDF\]](/publications/ecoop24-lincheck-plugin.pdf)** <a id="issta24-lincheck-idea"/>\\
+Aleksandr Potapov, Maksim Zuev, Evgenii Moiseenko, Nikita Koval. *ISSTA 2024*.
+
 **Memory Bounds for Concurrent Bounded Queues [\[PDF\]](/publications/ppopp24-bounded-queues.pdf)** <a id="ppopp24-bounded-queues"/>\\
 Vitaly Aksenov, Nikita Koval, Petr Kuznetsov, Anton Paramonov. *PPoPP 2024*.
 
