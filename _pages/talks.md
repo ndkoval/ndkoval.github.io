@@ -1,11 +1,11 @@
 ---
-title:  "My talks"
+title:  "Public talks"
 layout: single
 permalink: /talks/
 author_profile: true
 comments: true
 toc: true
-toc_label: "Talks"
+toc_label: "Public Talks"
 ---
 
 Most of the talks are arranged by projects. Some talks were given multiple times, please choose the most recent version. Enjoy your time of watching them!
