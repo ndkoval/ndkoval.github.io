@@ -60,7 +60,7 @@ and master writing tests for concurrent code on JVM — ensuring your team can v
       <li>Certificate of completion</li>
     </ul>
     <p style="text-align: center; margin-top: 20px;">
-      <a href="mailto:parusnikita@gmail.com?subject=Corporate%20Workshop%20Inquiry" class="btn btn--primary" style="width: 100%; text-align: center; display: block; padding: 10px 0;">Request Booking</a>
+      <a href="mailto:parusnikita@gmail.com?subject=Concurrent%20Algorithms%20Workshop%20Inquiry" class="btn btn--primary" style="width: 100%; text-align: center; display: block; padding: 10px 0;">Request Booking</a>
     </p>
   </div>
 </div>
