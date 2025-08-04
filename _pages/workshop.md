@@ -236,7 +236,6 @@ the course will equip you with valuable skills and knowledge.
 
 <div style="background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%); padding: 35px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid rgba(0,102,204,0.1); position: relative; overflow: hidden;">
   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(90deg, #0066cc, #4d94ff);"></div>
-  <i class="fas fa-comments" style="font-size: 2.5rem; color: #0066cc; margin-bottom: 15px; display: block;"></i>
   <h3 style="margin-top: 0; color: #0066cc; font-size: 1.5rem; margin-bottom: 15px;">Have Questions?</h3>
   <p style="color: #555; font-size: 1.1rem; max-width: 600px; margin: 0 auto 20px; line-height: 1.6;">Let's connect and explore how this workshop can benefit your team.</p>
   <a href="mailto:parusnikita@gmail.com?subject=Workshop%20Questions%20and%20Topics" class="btn btn--primary" style="display: inline-block; padding: 12px 30px; font-weight: bold; font-size: 1.1rem; border-radius: 30px; box-shadow: 0 5px 15px rgba(0,102,204,0.3); transition: all 0.3s ease;">Contact Me</a>
