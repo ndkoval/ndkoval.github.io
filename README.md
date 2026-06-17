@@ -1,50 +1,46 @@
-# Local Development Guide for ndkoval.github.io
+# ndkoval.github.io
 
-This guide provides instructions for setting up and running this Jekyll-based website on your local machine.
+Source for [nikitakoval.org](https://nikitakoval.org) — a [Jekyll](https://jekyllrb.com/)
+site built on the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme.
 
 ## Prerequisites
 
-- Ruby (version 2.5.0 or higher)
-- RubyGems
-- Bundler
+- Ruby 3.1+ (with RubyGems)
+- Bundler (`gem install bundler`)
 
-## Setup Instructions
+## Run locally
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/ndkoval/ndkoval.github.io.git
-   cd ndkoval.github.io
-   ```
-
-2. Install dependencies:
-   ```
+1. Install dependencies:
+   ```bash
    bundle install
    ```
 
-3. Make sure the theme is enabled for local build:
-   In `_config.yml`, uncomment the line:
-   ```
-   theme: minimal-mistakes-jekyll
-   ```
-   (This line should be around line 27 in the file)
-
-4. Build and serve the website:
-   ```
+2. Build and serve the site:
+   ```bash
    bundle exec jekyll serve
    ```
 
-5. Open your browser and navigate to:
-   ```
-   http://localhost:4000
-   ```
+3. Open <http://localhost:4000>.
+
+The theme is pinned via the `minimal-mistakes-jekyll` gem (see `Gemfile`), so the
+local build matches what is deployed — no extra configuration is required.
+
+> Optional: an admin UI is available at <http://localhost:4000/admin> while the
+> server is running (provided by the `jekyll-admin` plugin).
+
+## Deployment
+
+Pushing to `master` triggers the GitHub Actions workflow at
+`.github/workflows/jekyll.yml`, which builds the site with this exact Gemfile
+(Jekyll 4) and publishes it to GitHub Pages. The live site uses the custom
+domain in `CNAME` (`nikitakoval.org`).
+
+> One-time setup: in the repository **Settings → Pages**, set **Source** to
+> **GitHub Actions**.
 
 ## Troubleshooting
 
-- If you encounter gem version conflicts, make sure to use `bundle exec` before any Jekyll commands.
-- If you make changes to `_config.yml`, you'll need to restart the Jekyll server for changes to take effect.
-- For more detailed Jekyll documentation, visit [Jekyll's official site](https://jekyllrb.com/docs/).
-
-## Notes
-
-- The site uses the Minimal Mistakes theme.
-- When deploying to GitHub Pages, the theme configuration will be handled automatically by the remote_theme setting.
+- Always run Jekyll through Bundler (`bundle exec jekyll ...`) so the pinned gem
+  versions are used.
+- Changes to `_config.yml` require restarting the server to take effect.
+- Port already in use? Serve on another port: `bundle exec jekyll serve --port 4001`.

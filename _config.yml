@@ -23,16 +23,23 @@ twitter_username: nkoval_
 repository: "ndkoval/ndkoval.github.io"
 # Build settings
 markdown: kramdown
-# UNCOMMENT ME FOR LOCAL BUILD!
-# theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes"
+# Theme is pinned via the minimal-mistakes-jekyll gem (see Gemfile) so that
+# local and CI builds are identical and reproducible.
+theme: minimal-mistakes-jekyll
+# The theme's bundled Sass predates Dart Sass and emits deprecation warnings.
+# quiet_deps silences warnings from imported (theme) stylesheets while still
+# reporting any in this site's own Sass. The theme is loaded via @import (it
+# has no @use-based entrypoint), so the import deprecation is silenced too.
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
 plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-include-cache
   - jemoji
 
 minimal_mistakes_skin: "air"

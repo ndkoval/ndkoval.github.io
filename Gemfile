@@ -1,42 +1,32 @@
 source "https://rubygems.org"
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-gem "jekyll"
-gem "jekyll-redirect-from"
-gem "jekyll-remote-theme"
-gem "github-pages"
-gem 'jekyll-include-cache'
+# Jekyll static-site generator.
+# Run the site locally with: bundle exec jekyll serve
+gem "jekyll", "~> 4.4"
 
+# Theme (pinned via the gem so local and CI builds are reproducible).
+gem "minimal-mistakes-jekyll", "~> 4.28"
 
-gem 'jekyll-paginate'
-gem 'jekyll-admin', group: :jekyll_plugins
-
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima"
-
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-
-# If you have any plugins, put them here!
+# Plugins. These are auto-loaded by Jekyll because they live in the
+# :jekyll_plugins group; the active set is also listed in _config.yml.
 group :jekyll_plugins do
   gem "jekyll-feed"
+  gem "jekyll-include-cache"
+  gem "jekyll-archives"
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
+  gem "jemoji"
+
+  # Local admin UI (http://localhost:4000/admin). Not used by the build.
+  gem "jekyll-admin"
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# Retry middleware for Faraday v2, used by octokit (pulled in via the theme's
+# jekyll-gist dependency). Avoids a startup notice and enables request retries.
+gem "faraday-retry"
 
-gem 'jekyll-archives'
-gem "minimal-mistakes-jekyll"
-gem "jemoji"
+# Windows and JRuby do not ship zoneinfo files, so bundle the data gem there.
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Boot Jekyll's built-in development server.
 gem "webrick"
-
-# see https://stackoverflow.com/questions/75088199/require-cannot-load-such-file-rack-handler-loaderror
-gem 'rackup'
