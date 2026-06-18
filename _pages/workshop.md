@@ -74,10 +74,82 @@ and master writing tests for concurrent code on JVM — including AI-generated c
       <li>Certificate of completion</li>
     </ul>
     <p style="text-align: center; margin-top: 20px;">
-      <a href="mailto:parusnikita@gmail.com?subject=4-Day%20Workshop%20on%20Concurrent%20Programming%20Fundamentals" class="btn btn--primary" style="width: 100%; text-align: center; display: block; padding: 10px 0;">Request Booking</a>
+      <a href="https://forms.gle/XNiTY2s6N828YD8g9" target="_blank" rel="noopener" data-booking-open class="btn btn--primary" style="width: 100%; text-align: center; display: block; padding: 10px 0;">Request Booking</a>
     </p>
   </div>
 </div>
+
+<!-- Booking modal -->
+<div id="booking-modal" class="booking-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Workshop booking form">
+  <div class="booking-modal__backdrop" data-booking-close></div>
+  <div class="booking-modal__dialog">
+    <button type="button" class="booking-modal__close" data-booking-close aria-label="Close booking form">&times;</button>
+    <iframe data-booking-iframe data-src="https://docs.google.com/forms/d/e/1FAIpQLSeFpMKXLCdx0IN42_cJ1nmjjhz7G3SurmnSh6FLxwexDZvZEw/viewform?embedded=true" title="Workshop booking form" frameborder="0" marginheight="0" marginwidth="0" class="booking-modal__iframe">Loading…</iframe>
+  </div>
+</div>
+
+<style>
+.booking-modal { position: fixed; inset: 0; z-index: 1000; display: none; }
+.booking-modal.is-open { display: block; }
+.booking-modal__backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.6); }
+.booking-modal__dialog {
+  position: relative;
+  background: #fff;
+  width: min(720px, 92vw);
+  max-height: 90vh;
+  margin: 5vh auto 0;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.booking-modal__close {
+  position: absolute;
+  top: 4px;
+  right: 12px;
+  z-index: 2;
+  background: transparent;
+  border: 0;
+  font-size: 2rem;
+  line-height: 1;
+  color: #555;
+  cursor: pointer;
+  padding: 0 8px;
+}
+.booking-modal__close:hover { color: #000; }
+.booking-modal__iframe { width: 100%; height: 80vh; border: 0; }
+body.booking-modal-open { overflow: hidden; }
+</style>
+
+<script>
+(function () {
+  var modal = document.getElementById('booking-modal');
+  if (!modal) return;
+  var iframe = modal.querySelector('[data-booking-iframe]');
+  function openModal(e) {
+    if (e) e.preventDefault();
+    if (iframe && !iframe.src) { iframe.src = iframe.getAttribute('data-src'); }
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('booking-modal-open');
+  }
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('booking-modal-open');
+  }
+  document.querySelectorAll('[data-booking-open]').forEach(function (el) {
+    el.addEventListener('click', openModal);
+  });
+  modal.querySelectorAll('[data-booking-close]').forEach(function (el) {
+    el.addEventListener('click', closeModal);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+})();
+</script>
 
 
 ## Your Instructor
