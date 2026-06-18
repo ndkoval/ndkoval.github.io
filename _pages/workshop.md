@@ -1,5 +1,5 @@
 ---
-title:  "4-Day Workshop on Concurrent Programming Fundamentals"
+title:  "4-Day Workshop on Concurrent Programming Fundamentals for AI Era"
 layout: single
 classes: wide
 permalink: /workshop/
