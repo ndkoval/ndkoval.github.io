@@ -1,5 +1,5 @@
 ---
-title:  "4-Day Workshop on Concurrent Programming Fundamentals for the AI Era"
+title:  "4-Day Workshop on Concurrent Programming Fundamentals for AI Era"
 description: "A hands-on 4-day corporate workshop on concurrent programming for the AI era: build the intuition to write, test, and debug concurrent code — including AI-generated code — on the JVM."
 layout: single
 classes: wide
@@ -9,7 +9,7 @@ comments: false
 toc: false
 toc_label: Workshop
 header:
-  og_image: /assets/images/bio-photo.jpg
+  og_image: /assets/images/workshop-og.png
 ---
 
 With over eight years of research and teaching experience in concurrent programming,
@@ -161,176 +161,125 @@ body.booking-modal-open { overflow: hidden; }
 <div class="testimonial-grid">
 
   <div class="testimonial">
-    <div class="testimonial-content">
-      <img src="/assets/images/tagir_valeev.png" alt="Tagir Valeev" class="testimonial-image">
-      <div>
-        <h3>Tagir Valeev</h3>
-        <p class="testimonial-role">Technical Lead, JetBrains</p>
-      </div>
+    <img src="/assets/images/tagir_valeev.png" alt="Tagir Valeev" class="testimonial-image">
+    <div class="testimonial-body">
+      <p class="testimonial-text">The course covers concurrent data structures in depth, from atomic counters to full-fledged concurrent hashmaps. Nikita explains the material clearly and with expertise. The practical assignments are challenging but manageable, and with Lincheck, you can quickly spot missed corner cases in your code and keep moving forward.</p>
+      <p class="testimonial-author"><span class="testimonial-name">Tagir Valeev</span><span class="testimonial-role">Technical Lead, JetBrains</span></p>
     </div>
-    <p class="testimonial-text">The course covers concurrent data structures in depth, from atomic counters to full-fledged concurrent hashmaps. Nikita explains the material clearly and with expertise. The practical assignments are challenging but manageable, and with Lincheck, you can quickly spot missed corner cases in your code and keep moving forward.</p>
   </div>
 
   <div class="testimonial">
-    <div class="testimonial-content">
-      <img src="/assets/images/valentina_kiryushkina.jpeg" alt="Valentina Kiryushkina" class="testimonial-image">
-      <div>
-        <h3>Valentina Kiryushkina</h3>
-        <p class="testimonial-role">Team Lead, JetBrains</p>
-      </div>
+    <img src="/assets/images/valentina_kiryushkina.jpeg" alt="Valentina Kiryushkina" class="testimonial-image">
+    <div class="testimonial-body">
+      <p class="testimonial-text">The workshop paired clear theory with engaging, hands-on tasks that doubled as cross-team building. My only regret is that it ended so quickly!</p>
+      <p class="testimonial-author"><span class="testimonial-name">Valentina Kiryushkina</span><span class="testimonial-role">Team Lead, JetBrains</span></p>
     </div>
-    <p class="testimonial-text">The workshop paired clear theory with engaging, hands-on tasks that doubled as cross-team building. My only regret is that it ended so quickly!</p>
   </div>
+
+  <!-- DRAFT testimonial — hidden until Roman Elizarov approves the quote. Uncomment to publish.
+  <div class="testimonial">
+    <img src="/assets/images/roman_elizarov.jpg" alt="Roman Elizarov" class="testimonial-image">
+    <div class="testimonial-body">
+      <p class="testimonial-text">Concurrency is notoriously hard to get right — and even harder to teach well. Nikita does both. The workshop pairs deep, rigorous theory with hands-on practice and leaves you with the intuition to reason about concurrent code with confidence. A must for any team serious about concurrency.</p>
+      <p class="testimonial-author"><span class="testimonial-name">Roman Elizarov</span><span class="testimonial-role">Former Kotlin Language Lead</span></p>
+    </div>
+  </div>
+  -->
 
 </div>
 
 <style>
 .testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
   margin: 2rem 0;
 }
 
 .testimonial {
   display: flex;
-  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
   background-color: #ffffff;
   border-radius: 12px;
-  padding: 1.25rem 1.75rem 1.5rem 1.75rem;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-  position: relative;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0,102,204,0.1);
-  overflow: hidden;
-}
-
-.testimonial::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #0066cc, #4d94ff);
+  border: 1px solid rgba(0,102,204,0.12);
+  border-left: 4px solid #0066cc;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .testimonial:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
 }
-
 
 .testimonial-image {
-  width: 85px;
-  height: 85px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 1.25rem;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
   flex-shrink: 0;
-  transition: transform 0.3s ease;
+  border: 3px solid #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
 }
 
-.testimonial:hover .testimonial-image {
-  transform: scale(1.05);
+.testimonial-body {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  padding-top: 1.5rem;
 }
 
-.testimonial-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-.testimonial-content h3 {
-  margin: 0;
-  font-size: 1.25rem;
+/* Large decorative opening quote mark */
+.testimonial-body::before {
+  content: "\201C";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.1rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.25rem;
+  line-height: 1;
   color: #0066cc;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.testimonial-body p { margin: 0; }
+
+.testimonial-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: #1a1a1a;
+}
+
+.testimonial-body .testimonial-author {
+  margin: 0.85rem 0 0;
+}
+
+.testimonial-name {
+  display: block;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  color: #0066cc;
 }
 
 .testimonial-role {
-  color: #555;
+  display: block;
+  color: #666;
   font-style: italic;
-  margin: 0.3rem 0 0;
-  font-size: 0.95rem;
-  opacity: 0.9;
+  font-size: 0.92rem;
+  margin-top: 0.1rem;
 }
 
-.testimonial-text {
-  font-size: 1rem;
-  line-height: 1.5;
-  position: relative;
-  font-style: italic;
-  color: #000;
-  margin-top: 1rem;
-  width: 100%;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-}
-
-.testimonial-text::before {
-  content: """;
-  position: absolute;
-  top: -0.5rem;
-  left: 0.5rem;
-  font-size: 3rem;
-  color: #0066cc;
-  opacity: 0.3;
-  font-family: Georgia, serif;
-  line-height: 1;
-}
-
-.testimonial-text::after {
-  content: """;
-  position: absolute;
-  bottom: -1.5rem;
-  right: 0.5rem;
-  font-size: 3rem;
-  color: #0066cc;
-  opacity: 0.3;
-  font-family: Georgia, serif;
-  line-height: 1;
-}
-
-
-@media (max-width: 768px) {
-  .testimonial-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
+@media (max-width: 600px) {
   .testimonial {
-    padding: 1.5rem 1.5rem 1.75rem 1.5rem;
-  }
-
-  .testimonial-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1rem;
   }
-
-  .testimonial-content > div {
-    text-align: center;
-  }
-
-  .testimonial-image {
-    margin-right: 0;
-    margin-bottom: 1rem;
-    width: 90px;
-    height: 90px;
-  }
-
-  .testimonial-text {
-    text-align: left;
-  }
+  .testimonial-body { text-align: left; }
 }
 </style>
 
