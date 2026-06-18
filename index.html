@@ -9,21 +9,30 @@ author_profile: true
   <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: space-between;">
     <h1>About me</h1>
     <p>
-    Hi! I am Nikita Koval, and you are on my personal website.
-      I lead the Debugging Research team at JetBrains
-      and specialize in concurrent programming and program analysis.
-      Recent highlights include redesigning the synchronization and
-      communication primitives for Kotlin coroutines and creating Lincheck,
-      a testing framework for concurrent data structures.
+    Hi, I'm Nikita Koval. Welcome to my personal website 👋
     </p>
 
     <p>
-    Besides work, I am passionate about outdoor activities like cycling,
-    skiing, or hiking when not working. Yet, the true love is sailing on small sports boats — that's me on a laser on the right ⛵
+    I work on concurrency, programming languages, and AI tools. I have authored several
+    synchronization and communication constructs in Kotlin Coroutines, including channels,
+    mutexes, semaphores, and <code>select</code>, and I lead
+    <a href="https://github.com/JetBrains/lincheck">Lincheck</a>, a JVM framework for testing
+    concurrent algorithms.
     </p>
 
     <p>
-    Do not hesitate to drop me a line if we have an interesting topic to discuss!
+    Recently, my focus has shifted toward debugging. At JetBrains Research, I led a team working
+    on AI agent debugging and co-created <a href="https://appglass.org/">AppGlass</a>, a product
+    for safe debugging of production systems.
+    </p>
+
+    <p>
+    Outside work, I enjoy cycling, skiing, hiking, and especially sailing small sports boats —
+    that's me on a Laser on the right ⛵
+    </p>
+
+    <p>
+    Feel free to drop me a line if you'd like to discuss something interesting!
     </p>
   </div>
   <div style="width: 35%; min-width: 200px; margin-left: 20px; display: flex; align-items: stretch;">
@@ -43,22 +52,38 @@ author_profile: true
 </div>
 
 <div style="text-align:justify; background-color: #f0f7ff; border-radius: 10px; padding: 25px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 5px solid #0066cc;">
-<h1 style="color: #0066cc;">Concurrent Algorithms Workshop</h1>
+<h1 style="color: #0066cc;">Concurrent Programming Fundamentals for AI Era</h1>
 <hr style="border-color: #0066cc; opacity: 0.5;"/>
 <div style="display: flex; flex-wrap: wrap; align-items: center;">
   <div style="flex: 2; min-width: 300px;">
     <p style="font-size: 1.1em;">
-      <strong>Elevate your team's concurrent programming skills with this intensive 4-day workshop!</strong> Designed specifically for corporate teams, this hands-on training delivers practical algorithms and techniques that your developers can immediately apply to real-world challenges.
+      <strong>Elevate your team's concurrent programming skills with an intensive 4-day workshop!</strong> Designed specifically for corporate teams, this hands-on training delivers practical algorithms and techniques that your developers can immediately apply to real-world challenges.
     </p>
     <ul style="margin-top: 15px; padding-left: 20px;">
       <li><strong>Comprehensive curriculum</strong> from basic locking to advanced concurrent data structures</li>
       <li><strong>Hands-on exercises</strong> with instructor guidance throughout</li>
       <li><strong>Builds long-lasting intuition</strong> for solving concurrent programming challenges</li>
+      <li><strong>Trains your eye</strong> to quickly spot concurrency issues — especially when AI sounds confident</li>
     </ul>
     <p style="margin-top: 20px;">
       <a href="/workshop/" class="btn btn--primary" style="font-size: 1.1em; padding: 10px 20px; background-color: #0066cc;">Book for Your Team</a>
 <!--      <span style="margin-left: 15px; font-style: italic; color: #666;">Limited spots available for Q3/Q4 2025</span>-->
     </p>
+  </div>
+</div>
+</div>
+
+<div style="text-align:justify;">
+<h1>Selected talks</h1>
+<hr/>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 10px;">
+  <div style="flex: 1; min-width: 280px;">
+    <iframe style="width: 100%; aspect-ratio: 16 / 9; border: 0;" src="https://www.youtube.com/embed/ee0cG2SDJNE" title="Channels in Kotlin Coroutines — KotlinConf 2024" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p style="margin-top: 8px;"><b>Channels in Kotlin Coroutines</b><br><i>KotlinConf 2024</i></p>
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <iframe style="width: 100%; aspect-ratio: 16 / 9; border: 0;" src="https://www.youtube.com/embed/jZqkWfa11Js" title="How we test concurrent algorithms in Kotlin Coroutines — KotlinConf 2023" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p style="margin-top: 8px;"><b>How we test concurrent algorithms in Kotlin Coroutines</b><br><i>KotlinConf 2023</i></p>
   </div>
 </div>
 </div>
@@ -84,7 +109,6 @@ author_profile: true
   <i>Anastasiia Postnikova, Nikita Koval, Giorgi Nadiradze, Dan Alistarh. PPoPP 2022</i>.<br>
   This paper introduces several techniques that make the classic multi-queue significantly faster without losing fairness.
 </ul>
-<p>See the full list of publications <a href="/publications">here</a>.</p>
 </div>
 
 <!-- Show recent posts -->
