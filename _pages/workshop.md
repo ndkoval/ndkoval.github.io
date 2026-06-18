@@ -1,19 +1,26 @@
 ---
-title:  "4-Day Workshop on Concurrent Programming Fundamentals for AI Era"
+title:  "4-Day Workshop on Concurrent Programming Fundamentals for the AI Era"
+description: "A hands-on 4-day corporate workshop on concurrent programming for the AI era: build the intuition to write, test, and debug concurrent code — including AI-generated code — on the JVM."
 layout: single
 classes: wide
 permalink: /workshop/
 author_profile: true
-comments: true
+comments: false
 toc: false
 toc_label: Workshop
+header:
+  og_image: /assets/images/bio-photo.jpg
 ---
 
-With over seven years of research and teaching experience in concurrent programming, 
-I've designed this workshop to transform how your team approaches concurrency challenges. 
-The course focuses on practical algorithms and techniques that can be immediately applied to your company's projects. 
-Your developers will learn and implement a wide range of classic and modern concurrent data structures, 
-master testing and debugging techniques, and elevate their expertise to new heights.
+With over eight years of research and teaching experience in concurrent programming,
+I designed this workshop for the AI era — where code is generated faster than ever, but
+subtle concurrency bugs remain hard to spot.
+
+The course helps developers build the intuition
+and practical skills needed to understand, test, and debug concurrent code, including code
+produced or modified with AI tools. Your team will learn classic and modern concurrent data
+structures, apply practical testing and debugging techniques, and develop an eye for
+concurrency issues that AI may confidently miss.
 
 <div style="text-align: center; margin: 30px 0;">
   <a href="#pricing-and-booking" class="btn btn--primary" style="display: inline-block; padding: 12px 30px; font-weight: bold; font-size: 1.1rem; border-radius: 30px; box-shadow: 0 5px 15px rgba(0,102,204,0.3); transition: all 0.3s ease;">Pricing and Booking</a>
@@ -31,18 +38,25 @@ The workshop spans 4 days and is designed for 8 hours of focused work per day:
 
 *Curriculum is customizable based on participants' experience and specific interests.*
 
-### Day 1: Foundations and Fundamentals
-We begin with essential locking strategies and progress to classic non-blocking data structures like Treiber stack and Michael-Scott queue. Your team will also learn effective testing approaches for concurrent algorithms on JVM.
+### Day 1: Foundations and Basic Algorithms
+We begin with essential locking strategies and progress to classic non-blocking data structures like Treiber stack and Michael-Scott queue. Your team will also learn effective testing approaches for concurrent code on JVM.
 
 ### Day 2: Advanced Queue Implementations
 Your developers will implement a Fetch-and-Add-based queue and tackle the challenge of removing elements from the middle, scaling up both performance and their understanding of complex concurrency patterns.
 
 ### Day 3: Powerful Concurrency Patterns
-These two powerful concepts—flat combining and descriptors—allow your team to build concurrent versions of any sequential algorithm and perform atomic updates across multiple memory locations.
+These two powerful concepts — flat combining and descriptors — allow your team to build concurrent versions of any sequential algorithm and perform atomic updates across multiple memory locations.
 
 ### Day 4: Practical Applications and Testing
 We conclude with the design and implementation of a concurrent hash table using open addressing,
-and master writing tests for concurrent code on JVM — ensuring your team can verify the correctness of their implementations.
+and master writing tests for concurrent code on JVM — including AI-generated code — ensuring your team can verify the correctness of their implementations.
+
+**By the end, your team will be able to:**
+
+- Design and implement correct concurrent data structures with confidence
+- Quickly spot and debug subtle concurrency bugs — including in AI-generated code
+- Write reliable tests for concurrent code on the JVM with Lincheck
+- Share a lasting, team-wide intuition for reasoning about concurrency
 
 ## Pricing & Booking {#pricing-and-booking}
 
@@ -65,6 +79,10 @@ and master writing tests for concurrent code on JVM — ensuring your team can v
   </div>
 </div>
 
+
+## Your Instructor
+
+**Nikita Koval** is a Tech Lead at JetBrains specializing in concurrency and program analysis. He created [Lincheck](https://github.com/JetBrains/lincheck), the JVM framework for testing concurrent code, and authored several synchronization and communication primitives in Kotlin Coroutines, including channels, mutexes, semaphores, and `select`. With over eight years of research and teaching in concurrent programming — and talks at conferences such as KotlinConf and PPoPP — he combines deep expertise with hands-on teaching experience.
 
 ## What Past Participants Say
 
@@ -253,16 +271,14 @@ and master writing tests for concurrent code on JVM — ensuring your team can v
 * *Team Building.* Meet your colleagues from other teams and bond with them by solving problems together.
 
 ### Q: Will this course be useful for my daily work?
-Concurrency is a common concept,
-and understanding its basic principles is crucial even if you don't write concurrent code.
-Instead of focusing on constantly changing frameworks and libraries,
-we'll dive into the most fundamental and practical algorithms and techniques,
-building a lasting skillset and intuition.
+Yes. Concurrency is everywhere, and its basic principles matter even if you rarely write
+concurrent code yourself. Instead of chasing constantly changing frameworks and libraries,
+we focus on the most fundamental algorithms and techniques — building a lasting skillset and intuition.
 
-### Q: As a skilled developer, do I need this introductory course?
-Absolutely!
-If you are unfamiliar with concurrent algorithms,
-the course will equip you with valuable skills and knowledge.
+### Q: Does concurrency still matter now that AI writes code?
+More than ever. AI tools generate and modify code faster than ever, but subtle concurrency bugs
+remain hard to spot — and AI may confidently miss them. This course builds the intuition to
+understand, test, and debug concurrent code, including code produced or modified with AI.
 
 
 <div style="background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%); padding: 35px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid rgba(0,102,204,0.1); position: relative; overflow: hidden;">
