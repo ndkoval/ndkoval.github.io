@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skill Atlas</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @font-face { font-family: Inter; src: url('/ai-workshop/workshop/fonts/inter-variable.woff2') format('woff2'); font-weight: 100 900; }
+      @font-face { font-family: 'JetBrains Mono'; src: url('/ai-workshop/workshop/fonts/jetbrains-mono-variable.woff2') format('woff2'); font-weight: 100 800; }
+    </style>
+    <script type="module" src="boot.js"></script>
+  </head>
+  <body>
+    <div class="atlas">
+      <header class="top">
+        <h1 class="brand">Skill Atlas</h1>
+        <p class="repository" id="repository"></p>
+      </header>
+      <main class="layout">
+        <nav class="list" aria-label="Skills">
+          <ul id="skills"></ul>
+        </nav>
+        <article class="viewer" id="viewer" aria-live="polite"></article>
+      </main>
+    </div>
+  </body>
+</html>
