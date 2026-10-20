@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>02 · Tests, CI, and a web interface · Skill Atlas playground</title>
+    <link rel="icon" href="/ai-workshop/favicon.svg" />
+    <link rel="stylesheet" href="../shell.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <a class="home" href="../">Skill Atlas <span>playground</span></a>
+      <p class="title"><b>02 · Tests, CI, and a web interface</b> · The edge cases handled, and a local web view.</p>
+      <a class="slides" href="/#slides/lab-tests">Slides ↗</a>
+    </header>
+    <main class="stage with-web">
+      <div class="terminal">
+        <div class="terminal-bar"><i></i><i></i><i></i> Terminal</div>
+        <div class="scroll" id="scroll"><p class="intro">Step 02 in your browser: the same core as the CLI. Recorded: JetBrains/MPS, JetBrains/kotlin; other public repositories come live from GitHub. Alt+1…6 opens another step.</p></div>
+        <div class="try" id="try">Try:</div>
+        <form class="prompt" id="prompt">
+          <span class="dollar">$</span>
+          <input id="input" aria-label="Command" autocomplete="off" spellcheck="false" disabled />
+        </form>
+      </div>
+      <iframe class="web" id="web" title="Web view"></iframe>
+    </main>
+    <script type="application/json" id="config">{"stage":"02-tests-ci-web-view","steps":["01-cli","02-tests-ci-web-view","03-parallel-features","04-several-repos","05-recordings-screenshots","06-skill-map"],"fixtures":["JetBrains-MPS.json","JetBrains-kotlin.json"],"claude":false,"commands":["skill-atlas scan https://github.com/JetBrains/MPS","skill-atlas show bugfix-workflow","skill-atlas scan https://github.com/JetBrains/kotlin","skill-atlas help"]}</script>
+    <script type="module">
+      import { createBrowserBackend } from './backend.js';
+      import { startShell } from '../shell.js';
+      startShell({ createBrowserBackend, config: JSON.parse(document.getElementById('config').textContent) });
+    </script>
+  </body>
+</html>
